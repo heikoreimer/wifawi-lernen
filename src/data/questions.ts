@@ -6,6 +6,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "rw-001",
     category: "rechnungswesen",
     difficulty: 1,
+    pareto: 1,
     question: "Was ist der Unterschied zwischen der Finanzbuchhaltung (FiBu) und der Kosten- und Leistungsrechnung (KoLei)?",
     options: [
       "FiBu ist für externe Adressaten (Finanzamt, Gläubiger), KoLei für interne Entscheidungen (Kalkulation, Kontrolle)",
@@ -20,6 +21,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "rw-002",
     category: "rechnungswesen",
     difficulty: 2,
+    pareto: 1,
     question: "Ein Unternehmen produziert drei Produkte mit Äquivalenzziffern 1 : 2 : 3. Die Gesamtkosten betragen 60.000 €, Produktionsmengen je 1.000 Stück. Wie hoch sind die Kosten pro Stück für Produkt 2?",
     options: [
       "10 €", "20 €", "30 €", "15 €",
@@ -31,6 +33,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "rw-003",
     category: "rechnungswesen",
     difficulty: 2,
+    pareto: 1,
     question: "Welche Aussage zur Zuschlagskalkulation ist korrekt?",
     options: [
       "Die Verwaltungsgemeinkosten werden auf die Fertigungslöhne zugeschlagen",
@@ -45,6 +48,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "rw-004",
     category: "rechnungswesen",
     difficulty: 2,
+    pareto: 1,
     question: "Der Break-Even-Punkt liegt bei einer Produktionsmenge von 500 Stück. Fixkosten: 10.000 €, Verkaufspreis: 50 €. Wie hoch sind die variablen Stückkosten?",
     options: ["30 €", "20 €", "25 €", "40 €"],
     correctIndex: 0,
@@ -54,6 +58,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "rw-005",
     category: "rechnungswesen",
     difficulty: 1,
+    pareto: 1,
     question: "Was versteht man unter dem Deckungsbeitrag?",
     options: [
       "Umsatz minus Gesamtkosten",
@@ -68,6 +73,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "rw-006",
     category: "rechnungswesen",
     difficulty: 2,
+    pareto: 1,
     question: "Welche Kennzahl beschreibt die Gesamtkapitalrendite?",
     options: [
       "(Gewinn + Fremdkapitalzinsen) ÷ Gesamtkapital × 100",
@@ -84,6 +90,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "re-001",
     category: "recht",
     difficulty: 1,
+    pareto: 1,
     question: "Was sind die Pflichten des Verkäufers im Kaufvertrag?",
     options: [
       "Lieferung der Ware und Übereignung des Eigentums",
@@ -98,6 +105,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "re-002",
     category: "recht",
     difficulty: 2,
+    pareto: 1,
     question: "Ein Käufer entdeckt einen Sachmangel. In welcher Reihenfolge kann er seine Rechte geltend machen?",
     options: [
       "Sofort Schadensersatz fordern",
@@ -112,6 +120,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "re-003",
     category: "recht",
     difficulty: 1,
+    pareto: 1,
     question: "Was unterscheidet Eigentum von Besitz?",
     options: [
       "Eigentum ist das rechtliche Vollrecht (§ 903 BGB), Besitz die tatsächliche Sachherrschaft (§ 854 BGB)",
@@ -126,6 +135,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "re-004",
     category: "recht",
     difficulty: 2,
+    pareto: 1,
     question: "Wann liegt Schuldnerverzug vor?",
     options: [
       "Wenn der Schuldner trotz Fälligkeit und Mahnung nicht leistet (und kein Leistungshindernis besteht)",
@@ -140,6 +150,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "re-005",
     category: "recht",
     difficulty: 1,
+    pareto: 1,
     question: "Was ist eine selbstschuldnerische Bürgschaft?",
     options: [
       "Der Bürge verzichtet auf die Einrede der Vorausklage – Gläubiger kann sofort beim Bürgen vollstrecken",
@@ -156,6 +167,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "bwl-001",
     category: "bwl",
     difficulty: 1,
+    pareto: 1,
     question: "Was versteht man unter dem Magischen Viereck der Wirtschaftspolitik?",
     options: [
       "Preisstabilität, hoher Beschäftigungsstand, außenwirtschaftliches Gleichgewicht und angemessenes Wirtschaftswachstum",
@@ -170,6 +182,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "bwl-002",
     category: "bwl",
     difficulty: 2,
+    pareto: 1,
     question: "Welche Aussage zur GmbH ist korrekt?",
     options: [
       "Gesellschafter haften persönlich und unbeschränkt",
@@ -184,6 +197,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "bwl-003",
     category: "bwl",
     difficulty: 2,
+    pareto: 1,
     question: "Was beschreibt die Ansoff-Matrix?",
     options: [
       "Wachstumsstrategien durch Kombination von Märkten (alt/neu) und Produkten (alt/neu)",
@@ -198,6 +212,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "bwl-004",
     category: "bwl",
     difficulty: 1,
+    pareto: 1,
     question: "Was unterscheidet Konjunktur- von Saisonschwankungen?",
     options: [
       "Konjunkturschwankungen sind zyklisch über mehrere Jahre, Saisonschwankungen wiederholen sich regelmäßig innerhalb eines Jahres",
@@ -214,6 +229,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "pe-001",
     category: "personal",
     difficulty: 1,
+    pareto: 1,
     question: "Was ist der Unterschied zwischen Brutto- und Netto-Personalbedarf?",
     options: [
       "Bruttobedarf = zukünftiger Gesamtbedarf; Nettobedarf = Bruttobedarf minus vorhandenes Personal",
@@ -228,6 +244,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "pe-002",
     category: "personal",
     difficulty: 2,
+    pareto: 1,
     question: "Was beschreibt 'Management by Objectives' (MbO)?",
     options: [
       "Führung durch Zielvereinbarung: Vorgesetzter und Mitarbeiter vereinbaren gemeinsam messbare Ziele",
@@ -242,6 +259,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "pe-003",
     category: "personal",
     difficulty: 1,
+    pareto: 1,
     question: "Wofür steht die SMART-Formel bei der Zielformulierung?",
     options: [
       "Spezifisch, Messbar, Attraktiv/Anspruchsvoll, Realistisch, Terminiert",
@@ -256,6 +274,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "pe-004",
     category: "personal",
     difficulty: 2,
+    pareto: 1,
     question: "Was sind Vorteile der internen Personalrekrutierung?",
     options: [
       "Geringere Kosten, Mitarbeiter kennt das Unternehmen, Motivation durch Aufstiegschancen",
@@ -272,6 +291,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "ma-001",
     category: "marketing",
     difficulty: 1,
+    pareto: 1,
     question: "Was sind die vier klassischen Instrumente des Marketing-Mix (4P)?",
     options: [
       "Product, Price, Place, Promotion",
@@ -286,6 +306,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "ma-002",
     category: "marketing",
     difficulty: 2,
+    pareto: 1,
     question: "In der BCG-Matrix: Was charakterisiert einen 'Star'?",
     options: [
       "Hoher Marktanteil, hohes Marktwachstum – Investitionen erforderlich",
@@ -300,6 +321,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "ma-003",
     category: "marketing",
     difficulty: 2,
+    pareto: 1,
     question: "Was ist der Unterschied zwischen Handelsvertreter und Reisenden?",
     options: [
       "Handelsvertreter ist selbstständig (§ 84 HGB), Reisender ist angestellter Außendienstmitarbeiter",
@@ -316,6 +338,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "st-001",
     category: "steuern",
     difficulty: 1,
+    pareto: 1,
     question: "Was ist der Unterschied zwischen direkten und indirekten Steuern?",
     options: [
       "Direkte Steuern: Steuerschuldner = Steuerträger (z. B. Einkommensteuer). Indirekte Steuern: Abwälzung auf Dritte möglich (z. B. Umsatzsteuer)",
@@ -330,6 +353,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "st-002",
     category: "steuern",
     difficulty: 2,
+    pareto: 1,
     question: "Wann greift die Kleinunternehmerregelung nach § 19 UStG?",
     options: [
       "Vorjahresumsatz ≤ 22.000 € und voraussichtlicher Jahresumsatz ≤ 50.000 €",
@@ -344,6 +368,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "st-003",
     category: "steuern",
     difficulty: 2,
+    pareto: 1,
     question: "Wie wird die Gewerbesteuer berechnet?",
     options: [
       "Gewerbeertrag × Steuermesszahl × Hebesatz der Gemeinde",
@@ -360,6 +385,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "re-006",
     category: "recht",
     difficulty: 1,
+    pareto: 1,
     question: "Ab welchem Alter gilt eine natürliche Person als vollständig geschäftsfähig?",
     options: ["Ab 14 Jahren", "Ab 16 Jahren", "Ab 18 Jahren", "Ab 21 Jahren"],
     correctIndex: 2,
@@ -369,6 +395,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "re-007",
     category: "recht",
     difficulty: 1,
+    pareto: 1,
     question: "Was gilt für ein 6-jähriges Kind, das alleine einkaufen geht?",
     options: [
       "Wirksam, da Alltagsgeschäft",
@@ -383,6 +410,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "re-008",
     category: "recht",
     difficulty: 1,
+    pareto: 1,
     question: "Was erlaubt der Taschengeldparagraph (§ 110 BGB) einem 14-Jährigen?",
     options: [
       "Unbegrenzte Einkäufe bis 50 € pro Monat",
@@ -397,6 +425,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "re-009",
     category: "recht",
     difficulty: 1,
+    pareto: 1,
     question: "Welche Formvorschrift ist für einen Immobilienkauf zwingend?",
     options: ["Schriftform", "Textform (E-Mail genügt)", "Notarielle Beurkundung", "Mündliche Einigung reicht"],
     correctIndex: 2,
@@ -406,6 +435,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "re-010",
     category: "recht",
     difficulty: 1,
+    pareto: 1,
     question: "Wann sind AGB (§ 305 BGB) im B2C-Bereich wirksam einbezogen?",
     options: [
       "Immer, wenn sie auf der Rückseite des Vertrags abgedruckt sind",
@@ -420,6 +450,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "re-011",
     category: "recht",
     difficulty: 1,
+    pareto: 1,
     question: "Was passiert, wenn eine einzelne AGB-Klausel unwirksam ist?",
     options: [
       "Der gesamte Vertrag ist nichtig",
@@ -434,6 +465,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "re-012",
     category: "recht",
     difficulty: 1,
+    pareto: 1,
     question: "Was ist der Unterschied zwischen Hypothek (§ 1113 BGB) und Grundschuld (§ 1191 BGB)?",
     options: [
       "Keine Unterschiede, beide sichern Grundstücke ab",
@@ -448,6 +480,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "re-013",
     category: "recht",
     difficulty: 1,
+    pareto: 1,
     question: "Eine Kündigung des Arbeitsverhältnisses ist nur wirksam in:",
     options: ["Mündlicher Form", "Textform (SMS, E-Mail)", "Schriftform mit eigenhändiger Unterschrift (§ 623 BGB)", "Notarieller Beurkundung"],
     correctIndex: 2,
@@ -457,6 +490,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "re-014",
     category: "recht",
     difficulty: 1,
+    pareto: 1,
     question: "Wie lang ist die regelmäßige Verjährungsfrist nach § 195 BGB?",
     options: ["1 Jahr", "2 Jahre", "3 Jahre", "5 Jahre"],
     correctIndex: 2,
@@ -466,6 +500,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "re-015",
     category: "recht",
     difficulty: 1,
+    pareto: 1,
     question: "Was ist eine Sicherungsübereignung?",
     options: [
       "Das Pfandobjekt wird dem Gläubiger übergeben und dieser wird Besitzer",
@@ -480,6 +515,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "re-016",
     category: "recht",
     difficulty: 1,
+    pareto: 1,
     question: "Wann kann eine außerordentliche (fristlose) Kündigung ausgesprochen werden?",
     options: [
       "Bei jeder Vertragsverletzung",
@@ -494,6 +530,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "re-017",
     category: "recht",
     difficulty: 1,
+    pareto: 1,
     question: "Was versteht man unter gesamtschuldnerischer Haftung (§ 421 BGB)?",
     options: [
       "Jeder Schuldner haftet nur für seinen Anteil",
@@ -510,6 +547,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "st-004",
     category: "steuern",
     difficulty: 1,
+    pareto: 1,
     question: "Welcher Umsatzsteuersatz gilt in Deutschland als Normalsatz?",
     options: ["7 %", "15 %", "19 %", "21 %"],
     correctIndex: 2,
@@ -519,6 +557,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "st-005",
     category: "steuern",
     difficulty: 1,
+    pareto: 1,
     question: "Was ist die Zahllast bei der Umsatzsteuer?",
     options: [
       "Der gesamte Umsatz des Unternehmens",
@@ -533,6 +572,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "st-006",
     category: "steuern",
     difficulty: 1,
+    pareto: 1,
     question: "Für welche Produkte gilt der ermäßigte Umsatzsteuersatz von 7 %?",
     options: [
       "Elektronik, Autos, Luxusgüter",
@@ -547,6 +587,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "st-007",
     category: "steuern",
     difficulty: 1,
+    pareto: 1,
     question: "Welche Steuern sind für eine GmbH NICHT als Betriebsausgabe abzugsfähig?",
     options: [
       "Grundsteuer und Kfz-Steuer",
@@ -561,6 +602,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "st-008",
     category: "steuern",
     difficulty: 1,
+    pareto: 1,
     question: "Was ist die Grunderwerbsteuer?",
     options: [
       "Eine jährliche Steuer auf Grundstücke (kommunal)",
@@ -575,6 +617,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "st-009",
     category: "steuern",
     difficulty: 1,
+    pareto: 1,
     question: "Welche Steuer zahlt eine GmbH auf ihren Gewinn?",
     options: [
       "Nur Gewerbesteuer (lokal unterschiedlich)",
@@ -589,6 +632,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "st-010",
     category: "steuern",
     difficulty: 1,
+    pareto: 1,
     question: "Was sind Realsteuern?",
     options: [
       "Steuern auf tatsächlich erzielte Gewinne",
@@ -603,6 +647,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "st-011",
     category: "steuern",
     difficulty: 1,
+    pareto: 1,
     question: "Was regelt die Abgabenordnung (AO)?",
     options: [
       "Den Steuersatz für alle Steuerarten",
@@ -617,6 +662,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "st-012",
     category: "steuern",
     difficulty: 1,
+    pareto: 1,
     question: "Wie unterscheiden sich direkte und indirekte Steuern?",
     options: [
       "Direkte Steuern werden monatlich, indirekte jährlich gezahlt",
@@ -633,6 +679,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "rw-007",
     category: "rechnungswesen",
     difficulty: 1,
+    pareto: 1,
     question: "Was versteht man unter Leerkosten in der Plankostenrechnung?",
     options: [
       "Kosten für leere Lagerräume",
@@ -647,6 +694,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "rw-008",
     category: "rechnungswesen",
     difficulty: 1,
+    pareto: 1,
     question: "Was ist der Unterschied zwischen Verbrauchs- und Beschäftigungsabweichung?",
     options: [
       "Verbrauchsabweichung entsteht durch Effizienzunterschiede beim Einsatz; Beschäftigungsabweichung durch Abweichung von der Planbeschäftigung (Fixkostenverschleppung)",
@@ -661,6 +709,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "rw-009",
     category: "rechnungswesen",
     difficulty: 1,
+    pareto: 1,
     question: "Wie wird die Anlagenintensität berechnet?",
     options: [
       "Anlagevermögen ÷ Gesamtvermögen × 100",
@@ -675,6 +724,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "rw-010",
     category: "rechnungswesen",
     difficulty: 1,
+    pareto: 1,
     question: "Was ist der interne Zinsfuß (IRR)?",
     options: [
       "Der aktuelle EZB-Leitzins",
@@ -689,6 +739,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "rw-011",
     category: "rechnungswesen",
     difficulty: 1,
+    pareto: 1,
     question: "Was zeigt die Eigenkapitalquote?",
     options: [
       "Den Anteil des Eigenkapitals am Gesamtkapital – Indikator für finanzielle Stabilität",
@@ -703,6 +754,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "rw-012",
     category: "rechnungswesen",
     difficulty: 1,
+    pareto: 1,
     question: "Was versteht man unter der Amortisationszeit?",
     options: [
       "Die Zeit, bis eine Investition durch Einzahlungsüberschüsse vollständig zurückgeflossen ist",
@@ -717,6 +769,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "rw-013",
     category: "rechnungswesen",
     difficulty: 1,
+    pareto: 1,
     question: "Was ist der Unterschied zwischen Aufwand und Kosten?",
     options: [
       "Aufwand und Kosten sind in der Buchführung identisch",
@@ -731,6 +784,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "rw-014",
     category: "rechnungswesen",
     difficulty: 1,
+    pareto: 1,
     question: "Wie berechnet sich der Cashflow (indirekte Methode, vereinfacht)?",
     options: [
       "Umsatz minus alle Kosten des Jahres",
@@ -747,6 +801,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "bwl-005",
     category: "bwl",
     difficulty: 1,
+    pareto: 1,
     question: "Was sind die Produktionsfaktoren in der VWL?",
     options: [
       "Arbeit (originär), Boden (originär), Kapital (derivativ)",
@@ -761,6 +816,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "bwl-006",
     category: "bwl",
     difficulty: 1,
+    pareto: 1,
     question: "Was besagt das Maximalprinzip?",
     options: [
       "Mit minimalem Mitteleinsatz ein vorgegebenes Ziel erreichen",
@@ -775,6 +831,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "bwl-007",
     category: "bwl",
     difficulty: 1,
+    pareto: 1,
     question: "Welche Aussage zur OHG (Offene Handelsgesellschaft) ist korrekt?",
     options: [
       "Nur ein Gesellschafter haftet unbeschränkt, die anderen beschränkt",
@@ -789,6 +846,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "bwl-008",
     category: "bwl",
     difficulty: 1,
+    pareto: 1,
     question: "Was sind die vier Phasen des Konjunkturzyklus in der richtigen Reihenfolge?",
     options: [
       "Depression → Boom → Rezession → Aufschwung",
@@ -803,6 +861,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "bwl-009",
     category: "bwl",
     difficulty: 1,
+    pareto: 1,
     question: "Was ist expansive Fiskalpolitik?",
     options: [
       "Steuern erhöhen und Staatsausgaben kürzen zur Inflationsbekämpfung",
@@ -817,6 +876,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "bwl-010",
     category: "bwl",
     difficulty: 1,
+    pareto: 1,
     question: "Was ist das BIP (Bruttoinlandsprodukt)?",
     options: [
       "Summe aller Exporte eines Landes",
@@ -831,6 +891,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "bwl-011",
     category: "bwl",
     difficulty: 1,
+    pareto: 1,
     question: "Was ist der Unterschied zwischen Aufbau- und Ablauforganisation?",
     options: [
       "Aufbau = Prozesse und Abläufe; Ablauf = Hierarchien und Struktur",
@@ -845,6 +906,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "bwl-012",
     category: "bwl",
     difficulty: 1,
+    pareto: 1,
     question: "Was ist eine Matrixorganisation?",
     options: [
       "Reine Linienorganisation mit klarer Befehlskette",
@@ -859,6 +921,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "bwl-013",
     category: "bwl",
     difficulty: 1,
+    pareto: 1,
     question: "Was beschreibt die SWOT-Analyse?",
     options: [
       "Systematische Analyse von Stärken/Schwächen (intern) und Chancen/Risiken (extern)",
@@ -873,6 +936,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "bwl-014",
     category: "bwl",
     difficulty: 1,
+    pareto: 1,
     question: "Was beschreibt Inflation und welche Wirkung hat sie?",
     options: [
       "Anhaltender Rückgang des Preisniveaus → Kaufkraftgewinn",
@@ -887,6 +951,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "bwl-015",
     category: "bwl",
     difficulty: 1,
+    pareto: 1,
     question: "Was ist der Unterschied zwischen strategischer und operativer Planung?",
     options: [
       "Strategisch: kurzfristig (< 1 Jahr); Operativ: langfristig (5–10 Jahre)",
@@ -903,6 +968,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "pe-005",
     category: "personal",
     difficulty: 1,
+    pareto: 1,
     question: "Was ist der Unterschied zwischen Laufbahnplanung und Nachfolgeplanung?",
     options: [
       "Laufbahnplanung fokussiert die Entwicklung des Mitarbeiters; Nachfolgeplanung fokussiert die zu besetzende Schlüsselstelle",
@@ -917,6 +983,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "pe-006",
     category: "personal",
     difficulty: 1,
+    pareto: 1,
     question: "Welche Schutzfristen gelten nach dem Mutterschutzgesetz (MuSchG)?",
     options: [
       "4 Wochen vor und 6 Wochen nach der Geburt",
@@ -931,6 +998,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "pe-007",
     category: "personal",
     difficulty: 1,
+    pareto: 1,
     question: "Was beschreibt Maslow's Bedürfnispyramide?",
     options: [
       "5 Bedürfnisebenen: Physiologisch → Sicherheit → Sozial → Wertschätzung → Selbstverwirklichung (von unten nach oben zu erfüllen)",
@@ -945,6 +1013,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "pe-008",
     category: "personal",
     difficulty: 1,
+    pareto: 1,
     question: "Was unterscheidet Hygienefaktoren von Motivatoren nach Herzberg?",
     options: [
       "Hygienefaktoren verhindern Unzufriedenheit (z. B. Gehalt, Arbeitsbedingungen), schaffen aber keine Zufriedenheit; Motivatoren erzeugen echte Zufriedenheit (z. B. Anerkennung, Verantwortung)",
@@ -959,6 +1028,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "pe-009",
     category: "personal",
     difficulty: 1,
+    pareto: 1,
     question: "Was sind die Vorteile interner Personalrekrutierung?",
     options: [
       "Größeres Kandidatenfeld und frische Ideen von außen",
@@ -973,6 +1043,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "pe-010",
     category: "personal",
     difficulty: 1,
+    pareto: 1,
     question: "Was regelt das Arbeitszeitgesetz (ArbZG) zur täglichen Arbeitszeit?",
     options: [
       "Maximal 6 Stunden täglich ohne Ausnahme",
@@ -987,6 +1058,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "pe-011",
     category: "personal",
     difficulty: 1,
+    pareto: 1,
     question: "Was versteht man unter dem Führungsstil 'Laissez-faire'?",
     options: [
       "Strenge Kontrolle und klare Anweisungen durch den Vorgesetzten",
@@ -1001,6 +1073,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "pe-012",
     category: "personal",
     difficulty: 1,
+    pareto: 1,
     question: "Was ist ein Betriebsrat und ab wann kann er gegründet werden?",
     options: [
       "Ab 10 Mitarbeitern; vertritt die Interessen der Arbeitgeber",
@@ -1017,6 +1090,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "ma-004",
     category: "marketing",
     difficulty: 1,
+    pareto: 1,
     question: "Was sind die Phasen des Produktlebenszyklus?",
     options: [
       "Entwicklung → Markttest → Sättigung → Ende",
@@ -1031,6 +1105,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "ma-005",
     category: "marketing",
     difficulty: 1,
+    pareto: 1,
     question: "Was ist Benchmarking?",
     options: [
       "Festsetzung von Mindestpreisen im Wettbewerb",
@@ -1045,6 +1120,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "ma-006",
     category: "marketing",
     difficulty: 1,
+    pareto: 1,
     question: "Was ist der Unterschied zwischen Penetrations- und Skimmingstrategie?",
     options: [
       "Penetration: niedriger Einführungspreis zur schnellen Marktdurchdringung; Skimming: hoher Einführungspreis zur Abschöpfung zahlungsbereiter Kunden",
@@ -1059,6 +1135,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "ma-007",
     category: "marketing",
     difficulty: 1,
+    pareto: 1,
     question: "Was versteht man unter Marktsegmentierung?",
     options: [
       "Die Aufteilung des Unternehmens in Produktbereiche",
@@ -1073,6 +1150,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "ma-008",
     category: "marketing",
     difficulty: 1,
+    pareto: 1,
     question: "Was ist die McKinsey-Matrix (9-Felder-Matrix)?",
     options: [
       "Eine 4-Felder-Matrix wie die BCG-Matrix",
@@ -1087,6 +1165,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "ma-009",
     category: "marketing",
     difficulty: 1,
+    pareto: 1,
     question: "Was ist der Unterschied zwischen Handelsvertreter und Reisenden?",
     options: [
       "Handelsvertreter ist selbstständig (§ 84 HGB), arbeitet auf Provision; Reisender ist angestellter Außendienstmitarbeiter",
@@ -1101,6 +1180,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "ma-010",
     category: "marketing",
     difficulty: 1,
+    pareto: 1,
     question: "Was sind Porter's generische Wettbewerbsstrategien?",
     options: [
       "Wachstum, Stabilität, Rückzug",
@@ -1115,6 +1195,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: "ma-011",
     category: "marketing",
     difficulty: 1,
+    pareto: 1,
     question: "Was beschreibt die Ansoff-Matrix?",
     options: [
       "Portfolioanalyse mit Marktanteil und Marktwachstum",
@@ -1125,6 +1206,492 @@ export const QUESTIONS: QuizQuestion[] = [
     correctIndex: 1,
     explanation: "Ansoff-Matrix (4 Felder): Marktdurchdringung (altes Produkt, alter Markt – mehr verkaufen), Marktentwicklung (altes Produkt, neuer Markt), Produktentwicklung (neues Produkt, alter Markt), Diversifikation (neues Produkt, neuer Markt – risikoreichste Strategie).",
   },
+
+  // ─── VWL: Preis-Mengen-Diagramme & Marktformen ────────────────────────────
+  {
+    id: "vwl-001", category: "bwl", difficulty: 1, pareto: 1,
+    question: "Was ist ein vollkommener Markt?",
+    options: [
+      "Ein Markt mit nur einem Anbieter (Monopol)",
+      "Ein Markt mit homogenen Gütern, vollständiger Markttransparenz, freiem Marktzugang und rationalen Akteuren",
+      "Ein staatlich regulierter Markt ohne Preisschwankungen",
+      "Ein Markt, auf dem ausschließlich Großunternehmen agieren",
+    ],
+    correctIndex: 1,
+    explanation: "Vollkommener Markt (Modell): homogene Güter (keine Qualitätsunterschiede), vollständige Markttransparenz, keine Präferenzen, freier Marktzugang, unendlich viele Anbieter/Nachfrager. Auf solchen Märkten entsteht der vollkommene Wettbewerb.",
+  },
+  {
+    id: "vwl-002", category: "bwl", difficulty: 1, pareto: 1,
+    question: "Was passiert laut dem Marktpreismechanismus, wenn der Preis über dem Gleichgewichtspreis liegt?",
+    options: [
+      "Es entsteht Nachfrageüberhang → Preise steigen weiter",
+      "Es entsteht Angebotsüberhang (Überschussangebot) → Preisdruck nach unten bis zum Gleichgewicht",
+      "Der Staat muss eingreifen, um den Preis zu korrigieren",
+      "Die Nachfrage steigt automatisch, um das Angebot zu absorbieren",
+    ],
+    correctIndex: 1,
+    explanation: "Preis > Gleichgewichtspreis: Anbieter wollen mehr verkaufen als Nachfrager kaufen → Angebotsüberhang → Preissenkung bis zum Gleichgewicht (P*). Preis < P*: Nachfrageüberhang → Preissteigerung.",
+  },
+  {
+    id: "vwl-003", category: "bwl", difficulty: 2, pareto: 1,
+    question: "Was unterscheidet Oligopol von Monopol und Polypol?",
+    options: [
+      "Monopol: 1 Anbieter; Oligopol: wenige Anbieter; Polypol: viele Anbieter",
+      "Monopol: viele Anbieter; Oligopol: 1 Anbieter; Polypol: wenige",
+      "Oligopol ist immer staatlich reguliert; Monopol nicht",
+      "Polypol hat nur einen Nachfrager; Oligopol viele",
+    ],
+    correctIndex: 0,
+    explanation: "Marktformen nach Anbieterzahl: Monopol (1 Anbieter, z. B. früher Deutsche Bahn), Oligopol (wenige, z. B. Mobilfunk: Telekom, Vodafone, O2), Polypol (viele, z. B. landwirtschaftliche Märkte). Analoges gilt für Nachfrageseite.",
+  },
+  {
+    id: "vwl-004", category: "bwl", difficulty: 2, pareto: 1,
+    question: "Was versteht man unter der Volkswirtschaftlichen Gesamtrechnung (VGR)?",
+    options: [
+      "Die Buchhaltung des Bundesfinanzministeriums",
+      "Systematische Erfassung aller wirtschaftlichen Vorgänge einer Volkswirtschaft; Hauptgröße: BIP",
+      "Die Summe aller Unternehmensgewinne im Inland",
+      "Die staatliche Haushaltsplanung für das Folgejahr",
+    ],
+    correctIndex: 1,
+    explanation: "Die VGR erfasst Produktion, Einkommen und Verwendung einer Volkswirtschaft. Das BIP kann nach drei Methoden berechnet werden: Entstehungsrechnung (Produktionswert – Vorleistungen), Verwendungsrechnung (C + I + G + Ex – Im), Verteilungsrechnung (Arbeitnehmer- + Unternehmenseinkommen).",
+  },
+  {
+    id: "vwl-005", category: "bwl", difficulty: 2, pareto: 2,
+    question: "Was sind die vier Grundfreiheiten der Europäischen Union?",
+    options: [
+      "Freiheit, Gleichheit, Brüderlichkeit, Demokratie",
+      "Warenverkehrsfreiheit, Personenfreizügigkeit, Dienstleistungsfreiheit, Kapitalverkehrsfreiheit",
+      "Pressefreiheit, Meinungsfreiheit, Versammlungsfreiheit, Religionsfreiheit",
+      "Warenverkehr, Zollunion, Währungsunion, politische Union",
+    ],
+    correctIndex: 1,
+    explanation: "Die vier EU-Grundfreiheiten des Binnenmarkts: 1. Freier Warenverkehr, 2. Freie Personenfreizügigkeit (Arbeitnehmer + Niederlassungsfreiheit), 3. Freier Dienstleistungsverkehr, 4. Freier Kapital- und Zahlungsverkehr.",
+  },
+  {
+    id: "vwl-006", category: "bwl", difficulty: 1, pareto: 2,
+    question: "Was versteht man unter Außenhandel und warum betreiben Länder ihn?",
+    options: [
+      "Handel zwischen staatlichen Institutionen innerhalb eines Landes",
+      "Grenzüberschreitender Güter- und Dienstleistungsaustausch; Motiv: komparative Kostenvorteile (Spezialisierung)",
+      "Nur Import von Rohstoffen aus Drittländern",
+      "Export von Industriegütern gegen Import von Agrargütern",
+    ],
+    correctIndex: 1,
+    explanation: "Außenhandel basiert auf komparativen Kostenvorteilen (Ricardo): Länder spezialisieren sich auf Güter, bei denen sie relativ effizienter sind, und tauschen aus. Vorteile: Wohlfahrtsgewinn, Skaleneffekte, Angebotsvielfalt.",
+  },
+
+  // ─── BWL: Betriebliche Zusammenarbeit (Kooperation & Konzentration) ───────
+  {
+    id: "bwl-016", category: "bwl", difficulty: 1, pareto: 1,
+    question: "Was ist der Unterschied zwischen Kooperation und Konzentration (Fusion)?",
+    options: [
+      "Kooperation: freiwillige Zusammenarbeit, beide Unternehmen bleiben rechtlich selbstständig; Konzentration: Unternehmen verlieren rechtliche/wirtschaftliche Selbstständigkeit",
+      "Beide Begriffe bedeuten dasselbe",
+      "Konzentration ist nur für Großunternehmen möglich",
+      "Kooperation erfordert einen Vertrag; Konzentration ist formlos",
+    ],
+    correctIndex: 0,
+    explanation: "Kooperation: beide Unternehmen bleiben rechtlich + wirtschaftlich selbstständig (z. B. ARGE, Joint Venture, Kartell). Konzentration/Fusion: mind. ein Unternehmen gibt Selbstständigkeit auf (Merger, Akquisition, Konzern).",
+  },
+  {
+    id: "bwl-017", category: "bwl", difficulty: 2, pareto: 1,
+    question: "Was ist ein Kartell, und warum ist es in Deutschland verboten?",
+    options: [
+      "Fusion zweier Unternehmen zur Marktbeherrschung – erlaubt mit GWB-Genehmigung",
+      "Vereinbarung konkurrierender Unternehmen zur Wettbewerbsbeschränkung (z. B. Preisabsprachen) – grundsätzlich verboten nach GWB § 1 und EU-Recht Art. 101 AEUV",
+      "Legale Kooperation zwischen Unternehmen verschiedener Branchen",
+      "Ein staatlich anerkannter Unternehmensverbund im Exportbereich",
+    ],
+    correctIndex: 1,
+    explanation: "Kartelle (Preisabsprachen, Marktaufteilung, Quoten) sind nach § 1 GWB und Art. 101 AEUV verboten, weil sie den Wettbewerb verfälschen und Verbraucher schädigen. Ausnahmen: Exportkartelle (nur Auslandsmärkte) und Rationalisierungskartelle (mit Genehmigung).",
+  },
+  {
+    id: "bwl-018", category: "bwl", difficulty: 1, pareto: 1,
+    question: "Was ist ein Joint Venture?",
+    options: [
+      "Eine Fusion zweier Unternehmen zu einem neuen",
+      "Eine gemeinsame Tochtergesellschaft zweier Unternehmen für ein bestimmtes Projekt oder einen Markt – beide behalten ihre Selbstständigkeit",
+      "Ein kurzfristiger Liefervertrag zwischen zwei Unternehmen",
+      "Eine Holding-Gesellschaft mit Beteiligungen an mehreren Unternehmen",
+    ],
+    correctIndex: 1,
+    explanation: "Joint Venture: zwei oder mehr Unternehmen gründen eine gemeinsame rechtlich selbstständige Gesellschaft. Vorteil: Risikoteilung, Ressourcenbündelung. Beispiel: Sony-Ericsson (Smartphones). Die Muttergesellschaften bleiben eigenständig.",
+  },
+  {
+    id: "bwl-019", category: "bwl", difficulty: 2, pareto: 2,
+    question: "Was sind horizontale, vertikale und konglomerate Unternehmenszusammenschlüsse?",
+    options: [
+      "Alle drei bedeuten dasselbe – nur unterschiedliche Bezeichnungen",
+      "Horizontal: gleiche Branche/Stufe; Vertikal: vor- oder nachgelagerte Stufe der Wertschöpfung; Konglomerat: völlig verschiedene Branchen",
+      "Horizontal: große Unternehmen; Vertikal: kleine; Konglomerat: international",
+      "Horizontal: B2B; Vertikal: B2C; Konglomerat: B2G",
+    ],
+    correctIndex: 1,
+    explanation: "Horizontal: z. B. Daimler + Chrysler (gleiche Branche). Vertikal: z. B. Automobilhersteller kauft Zulieferer (vor- oder nachgelagert). Konglomerat: Diversifikation in völlig andere Branchen (z. B. Mischkonzern Bertelsmann: Medien + Logistik).",
+  },
+
+  // ─── Recht: HGB, Wettbewerbsrecht, Produkthaftung ────────────────────────
+  {
+    id: "re-018", category: "recht", difficulty: 1, pareto: 1,
+    question: "Was versteht man unter Prokura (§§ 48–53 HGB)?",
+    options: [
+      "Eine einfache Vollmacht zum Einkauf von Büromaterial",
+      "Eine umfassende Handlungsvollmacht, die alle gerichtlichen und außergerichtlichen Geschäfte des Kaufmanns abdeckt – nur durch eingetragenen Kaufmann erteilt",
+      "Die Berechtigung, Mitarbeiter einzustellen",
+      "Ein Genehmigungsverfahren für Großinvestitionen",
+    ],
+    correctIndex: 1,
+    explanation: "Prokura (§§ 48 ff. HGB): umfasendste kaufmännische Vollmacht. Der Prokurist kann alle Geschäfte und Rechtshandlungen vornehmen, die der Betrieb eines Handelsgewerbes mit sich bringt – außer Grundstücksverkauf und Erteilung weiterer Prokura. Eintragung ins Handelsregister.",
+  },
+  {
+    id: "re-019", category: "recht", difficulty: 2, pareto: 2,
+    question: "Was regelt das UWG (Gesetz gegen unlauteren Wettbewerb)?",
+    options: [
+      "Den Zusammenschluss von Unternehmen (Fusionskontrolle)",
+      "Den Schutz vor unlauteren Geschäftspraktiken: irreführende Werbung, aggressive Verkaufsmethoden, Nachahmung – Unterlassungs- und Schadensersatzansprüche",
+      "Die Preisgestaltung im Einzelhandel",
+      "Den Schutz von Patenten und Marken",
+    ],
+    correctIndex: 1,
+    explanation: "Das UWG schützt Mitbewerber, Verbraucher und Allgemeinheit vor unlauteren Geschäftspraktiken. Verboten sind z. B.: irreführende Werbung, Lockvogelangebote, unzumutbare Belästigung (Spam), aggressive Verkaufsmethoden. Sanktion: Unterlassung, Schadensersatz.",
+  },
+  {
+    id: "re-020", category: "recht", difficulty: 2, pareto: 2,
+    question: "Was regelt das Produkthaftungsgesetz (ProdHaftG)?",
+    options: [
+      "Die Gewährleistungsrechte bei mangelhafter Ware im B2C-Bereich",
+      "Verschuldensunabhängige Haftung des Herstellers für Schäden durch fehlerhafte Produkte (Produktfehler = Sicherheitsmangel)",
+      "Den Rückruf von mangelhaften Produkten",
+      "Die Zulassung von neuen Produkten auf dem deutschen Markt",
+    ],
+    correctIndex: 1,
+    explanation: "ProdHaftG: Hersteller haften verschuldensunabhängig (Gefährdungshaftung) für Schäden, die ein fehlerhaftes Produkt verursacht. Fehler = das Produkt entspricht nicht der berechtigten Sicherheitserwartung. Haftungsgrenze: 85 Mio. € pro Schadensfall.",
+  },
+  {
+    id: "re-021", category: "recht", difficulty: 1, pareto: 1,
+    question: "Was sind Pflichtangaben auf einer ordnungsgemäßen Rechnung (§ 14 UStG)?",
+    options: [
+      "Nur Name und Preis reichen aus",
+      "Name/Adresse von Leistungserbringer und -empfänger, Steuernummer/USt-ID, Rechnungsdatum, Rechnungsnummer, Leistungsbeschreibung, Entgelt, Steuersatz und -betrag",
+      "Nur bei Rechnungen über 150 € sind alle Angaben Pflicht",
+      "Unterschrift des Rechnungsstellers ist zwingend",
+    ],
+    correctIndex: 1,
+    explanation: "§ 14 UStG: Rechnungspflichtangaben: vollständiger Name und Adresse beider Parteien, Steuernummer oder USt-IdNr., Rechnungsdatum, Rechnungsnummer, Menge und Art der Leistung, Leistungsdatum, Nettoentgelt, Steuersatz und Steuerbetrag (oder Hinweis auf Steuerbefreiung).",
+  },
+
+  // ─── Personal: Entlohnung, Beurteilung, Ausbildung ────────────────────────
+  {
+    id: "pe-013", category: "personal", difficulty: 1, pareto: 1,
+    question: "Was ist der Unterschied zwischen Zeitlohn und Akkordlohn?",
+    options: [
+      "Zeitlohn richtet sich nach der geleisteten Arbeitszeit; Akkordlohn nach der erbrachten Menge/Leistung",
+      "Akkordlohn ist höher als Zeitlohn",
+      "Zeitlohn gilt nur für Führungskräfte; Akkordlohn für Produktionsmitarbeiter",
+      "Beide Lohnformen sind identisch",
+    ],
+    correctIndex: 0,
+    explanation: "Zeitlohn: Vergütung nach Arbeitszeit (Stunden, Monatsgehalt) – unabhängig von der Leistungsmenge. Sicherheit für Arbeitnehmer. Akkordlohn: Vergütung nach Stückzahl oder Zeit pro Stück (Geld- oder Zeitakkord) – fördert Produktivität, aber Qualitätsrisiko.",
+  },
+  {
+    id: "pe-014", category: "personal", difficulty: 2, pareto: 1,
+    question: "Was ist Job Enrichment, und wie unterscheidet es sich von Job Enlargement?",
+    options: [
+      "Job Enrichment = mehr Aufgaben auf gleicher Ebene; Job Enlargement = Aufgaben auf höherer Ebene",
+      "Job Enrichment = vertikale Erweiterung (mehr Verantwortung, Planung, Kontrolle); Job Enlargement = horizontale Erweiterung (mehr Aufgaben auf gleicher Ebene)",
+      "Beide Begriffe bedeuten dasselbe",
+      "Job Rotation = Job Enrichment = Job Enlargement – nur verschiedene Namen",
+    ],
+    correctIndex: 1,
+    explanation: "Job Enrichment (vertikal): Mitarbeiter erhält zusätzliche Kompetenzen (Planung, Kontrolle) → Aufwertung der Stelle. Job Enlargement (horizontal): mehr Aufgaben auf gleicher Qualifikationsebene → Abwechslung, aber keine Erweiterung der Entscheidungskompetenz. Job Rotation: Stellenwechsel.",
+  },
+  {
+    id: "pe-015", category: "personal", difficulty: 2, pareto: 1,
+    question: "Was regelt das Berufsbildungsgesetz (BBiG) in der Ausbildung?",
+    options: [
+      "Nur die Inhalte der Hochschulausbildung",
+      "Rechte und Pflichten von Ausbildenden und Auszubildenden: Ausbildungsvertrag, Probezeit, Vergütung, Berichtsheft, Prüfungen",
+      "Nur die Vergütung von Auszubildenden",
+      "Ausschließlich gewerbliche Ausbildungsberufe",
+    ],
+    correctIndex: 1,
+    explanation: "BBiG regelt die duale Berufsausbildung: Ausbildungsvertrag (Schriftform), Probezeit (1–4 Monate), Mindestvergütung, Berichtsheft (Ausbildungsnachweis), Zwischen- und Abschlussprüfungen, Rechte der Auszubildenden (Urlaub, keine prüfungsfremden Tätigkeiten).",
+  },
+  {
+    id: "pe-016", category: "personal", difficulty: 2, pareto: 2,
+    question: "Was sind Methoden der Personalbeurteilung?",
+    options: [
+      "Nur das Mitarbeitergespräch",
+      "Freie Beschreibung, Einstufungsverfahren (Beurteilungsbogen mit Skalen), 360°-Feedback, Zielvereinbarungsgespräch (MbO)",
+      "Ausschließlich standardisierte Tests",
+      "Nur externe Bewertung durch Unternehmensberater",
+    ],
+    correctIndex: 1,
+    explanation: "Personalbeurteilungsmethoden: Freie Beschreibung (subjektiv), Einstufungsverfahren (Beurteilungsbogen mit Kriterien und Skalen), Rangordnungsverfahren, 360°-Feedback (Vorgesetzte, Peers, Untergebene), Zielvereinbarung (MbO). Häufige Fehler: Halo-Effekt, Sympathie-Effekt.",
+  },
+  {
+    id: "pe-017", category: "personal", difficulty: 1, pareto: 2,
+    question: "Was ist die Leittextmethode in der Ausbildung?",
+    options: [
+      "Eine Methode zur schriftlichen Kommunikation im Unternehmen",
+      "Eine handlungsorientierte Ausbildungsmethode: Auszubildende erarbeiten sich Lerninhalte selbstständig anhand von Leitfragen und Leittexten",
+      "Eine Prüfungsmethode für Abschlussprüfungen",
+      "Eine Methode zum Verfassen von Stellenbeschreibungen",
+    ],
+    correctIndex: 1,
+    explanation: "Leittextmethode: strukturierte, selbstgesteuerte Lernmethode in 6 Schritten: Informieren → Planen → Entscheiden → Ausführen → Kontrollieren → Bewerten. Fördert eigenverantwortliches Lernen und Handlungskompetenz. Häufig in gewerblichen Ausbildungsberufen.",
+  },
+
+  // ─── HSQ Management: Projektmanagement, Konflikt, Kreativität ─────────────
+  {
+    id: "mg-001", category: "bwl", difficulty: 1, pareto: 1,
+    question: "Was sind die Phasen eines Projekts (Projektmanagement)?",
+    options: [
+      "Idee → Umsetzung → Abschluss",
+      "Initiierung/Definition → Planung → Durchführung/Steuerung → Abschluss",
+      "Analyse → Konzept → Produktion → Vertrieb",
+      "Brainstorming → Prototyp → Test → Launch",
+    ],
+    correctIndex: 1,
+    explanation: "Projektphasen: 1. Initiierung/Definition (Auftrag, Ziele, Stakeholder), 2. Planung (Termine, Ressourcen, Meilensteine), 3. Durchführung und Steuerung (Controlling, Änderungsmanagement), 4. Abschluss (Übergabe, Lessons Learned). Magisches Dreieck: Zeit ↔ Kosten ↔ Qualität.",
+  },
+  {
+    id: "mg-002", category: "bwl", difficulty: 1, pareto: 1,
+    question: "Was beschreibt das 'magische Dreieck' im Projektmanagement?",
+    options: [
+      "Die drei Phasen: Planung, Durchführung, Kontrolle",
+      "Den Zielkonflikt zwischen Zeit, Kosten und Qualität/Leistungsumfang – Verbesserung einer Größe geht oft auf Kosten einer anderen",
+      "Die drei Rollen: Auftraggeber, Projektleiter, Team",
+      "Die Planungsmethoden: Netzplan, Balkenplan, Meilensteinplan",
+    ],
+    correctIndex: 1,
+    explanation: "Das magische Dreieck: Zeit – Kosten – Qualität/Leistung. Änderungen an einer Ecke beeinflussen die anderen: Kürzere Zeit bei gleicher Qualität → höhere Kosten. Geringere Kosten bei gleicher Zeit → niedrigere Qualität. Ziel: optimale Balance.",
+  },
+  {
+    id: "mg-003", category: "personal", difficulty: 2, pareto: 1,
+    question: "Was beschreibt das 4-Seiten-Modell der Kommunikation nach Schulz von Thun?",
+    options: [
+      "Vier Kommunikationskanäle: mündlich, schriftlich, nonverbal, digital",
+      "Jede Nachricht hat vier Ebenen: Sachinhalt, Selbstoffenbarung, Beziehung, Appell – Sender und Empfänger können unterschiedliche Seiten betonen",
+      "Vier Führungsstile für unterschiedliche Gesprächssituationen",
+      "Vier Phasen eines Konfliktgesprächs",
+    ],
+    correctIndex: 1,
+    explanation: "Schulz von Thun: Jede Aussage enthält vier Botschaften: Sachinhalt (Fakten), Selbstoffenbarung (über den Sender), Beziehungsaspekt (wie Sender zum Empfänger steht), Appell (was Sender möchte). Missverständnisse entstehen, wenn Sender und Empfänger auf unterschiedlichen Ebenen kommunizieren.",
+  },
+  {
+    id: "mg-004", category: "personal", difficulty: 2, pareto: 1,
+    question: "Was sind Konfliktarten im Unternehmen?",
+    options: [
+      "Nur interpersonelle Konflikte (zwischen Personen)",
+      "Sachkonflikte (über Inhalte/Ziele), Beziehungskonflikte (Antipathie), Rollenkonflikte (unklare Erwartungen), Ressourcenkonflikte (knappe Mittel)",
+      "Nur arbeitsrechtliche Konflikte mit dem Betriebsrat",
+      "Konflikte existieren in professionellen Umgebungen nicht",
+    ],
+    correctIndex: 1,
+    explanation: "Konfliktarten: Sachkonflikt (unterschiedliche Meinungen zu Inhalten), Beziehungskonflikt (persönliche Antipathie), Rollenkonflikt (unklare oder widersprüchliche Erwartungen), Ressourcenkonflikt (Verteilung knapper Mittel wie Budget, Zeit). Frühe Deeskalation spart Kosten.",
+  },
+  {
+    id: "mg-005", category: "bwl", difficulty: 2, pareto: 2,
+    question: "Was ist eine Nutzwertanalyse?",
+    options: [
+      "Eine Methode zur Gewinnermittlung",
+      "Eine Entscheidungsmethode: Alternativen werden nach gewichteten Kriterien bewertet und verglichen (nicht-monetäre Faktoren einbeziehbar)",
+      "Eine Analyse der Kundenzufriedenheit",
+      "Ein Instrument der Finanzbuchhaltung",
+    ],
+    correctIndex: 1,
+    explanation: "Nutzwertanalyse (NWA): 1. Zielkriterien definieren, 2. Gewichtung festlegen (Summe = 100 %), 3. Alternativen je Kriterium bewerten (Punkte), 4. Gewichtete Punkte summieren, 5. Höchster Nutzwert → beste Alternative. Vorteil: qualitative Faktoren messbar machen.",
+  },
+  {
+    id: "mg-006", category: "personal", difficulty: 2, pareto: 2,
+    question: "Was sind On-the-Job, Off-the-Job und Near-the-Job Personalentwicklungsmaßnahmen?",
+    options: [
+      "Drei Schichten der Arbeit: Frühschicht, Spätschicht, Nachtschicht",
+      "On-the-job: Lernen am Arbeitsplatz (z. B. Coaching, Job Rotation); Off-the-job: externe Seminare; Near-the-job: Lerninseln/Qualitätszirkel neben dem Arbeitsplatz",
+      "Drei Vergütungsformen: Grundgehalt, Bonus, Benefits",
+      "Drei Phasen der Einarbeitung neuer Mitarbeiter",
+    ],
+    correctIndex: 1,
+    explanation: "PE-Maßnahmen: On-the-job (am Arbeitsplatz: Coaching, Mentoring, Job Rotation, Einarbeitung), Off-the-job (außerhalb: Seminare, Schulungen, Studium), Near-the-job (neben dem Arbeitsplatz: Qualitätszirkel, Lerninseln, Workshops). In-the-job = aktuelle Stelle anreichern.",
+  },
+
+  // ─── HSQ Führung: Mitarbeitergespräche, Gruppen ───────────────────────────
+  {
+    id: "fz-001", category: "personal", difficulty: 1, pareto: 1,
+    question: "Was sind Ziele und Arten von Mitarbeitergesprächen?",
+    options: [
+      "Nur das jährliche Beurteilungsgespräch",
+      "Ziele: Feedback, Entwicklung, Motivation, Problemlösung. Arten: Jahresgespräch, Zielvereinbarung, Rückkehrgespräch, Kritikgespräch, Abmahnungsgespräch",
+      "Mitarbeitergespräche dienen nur dazu, Entlassungen vorzubereiten",
+      "Ausschließlich Gehaltsverhandlungen",
+    ],
+    correctIndex: 1,
+    explanation: "Mitarbeitergespräche sind strukturierte Vier-Augen-Gespräche mit verschiedenen Zwecken: Jahresgespräch (Rückblick + Ziele), Zielvereinbarungsgespräch (MbO), Rückkehrgespräch (nach Krankheit), Kritik-/Abmahnungsgespräch, Fördergespräch. Vorbereitung und vertrauliche Atmosphäre sind entscheidend.",
+  },
+  {
+    id: "fz-002", category: "personal", difficulty: 2, pareto: 2,
+    question: "Was sind die Phasen der Gruppenentwicklung nach Tuckman?",
+    options: [
+      "Start → Mitte → Ende",
+      "Forming → Storming → Norming → Performing (→ Adjourning)",
+      "Orientierung → Konflikt → Lösung → Abschluss",
+      "Kennenlernen → Arbeiten → Auflösen",
+    ],
+    correctIndex: 1,
+    explanation: "Tuckman's Phasen: Forming (Orientierung, Höflichkeit), Storming (Konflikte, Machtkämpfe), Norming (Regeln entstehen, Zusammenhalt wächst), Performing (Hochleistung, effektive Zusammenarbeit), Adjourning (Auflösung). Teams müssen alle Phasen durchlaufen.",
+  },
+
+  // ─── HSQ Logistik ─────────────────────────────────────────────────────────
+  {
+    id: "log-001", category: "bwl", difficulty: 1, pareto: 1,
+    question: "Was ist der Unterschied zwischen deterministische und stochastische Bedarfsermittlung?",
+    options: [
+      "Beide sind identisch",
+      "Deterministisch: exakter Bedarf aus Stücklisten/Aufträgen (auftragsbezogen); Stochastisch: Prognose auf Basis historischer Verbrauchsdaten (statistisch)",
+      "Deterministisch ist immer ungenauer als stochastisch",
+      "Stochastisch wird nur für Produktionsbetriebe verwendet",
+    ],
+    correctIndex: 1,
+    explanation: "Deterministische Bedarfsermittlung: Primärbedarf → Sekundärbedarf (Stücklisten, Bestellauslösung bei konkretem Auftrag). Stochastische Bedarfsermittlung: Prognose auf Basis Vergangenheitsdaten (gleitender Mittelwert, exponentielle Glättung) – bei konstantem Verbrauch ohne Einzelauftrag.",
+  },
+  {
+    id: "log-002", category: "bwl", difficulty: 2, pareto: 1,
+    question: "Was ist die optimale Bestellmenge (Andler-Formel)?",
+    options: [
+      "Die Menge, bei der Lagerhaltungskosten minimal sind",
+      "Die Menge, bei der die Summe aus Bestellkosten und Lagerhaltungskosten minimal ist",
+      "Die Menge, die einem Monatsverbrauch entspricht",
+      "Die maximale Menge, die ein Lieferant liefern kann",
+    ],
+    correctIndex: 1,
+    explanation: "Optimale Bestellmenge (Andler): Bestellkosten sinken bei größeren Mengen (weniger Bestellvorgänge), Lagerkosten steigen. Die optimale Bestellmenge minimiert die Gesamtkosten. Formel: √(2 × Jahresbedarf × Bestellkosten / Lagerhaltungskostensatz × Einstandspreis).",
+  },
+  {
+    id: "log-003", category: "bwl", difficulty: 1, pareto: 1,
+    question: "Was sind Ziele der Logistik (die 6 R's)?",
+    options: [
+      "Rendite, Reichweite, Ressourcen, Risiko, Regelkonformität, Reputation",
+      "Das richtige Produkt, in der richtigen Menge, zur richtigen Zeit, am richtigen Ort, in der richtigen Qualität, zu den richtigen Kosten",
+      "Nur Kostensenkung und Liefertreue",
+      "Rohstoffe, Ressourcen, Recycling, Rückgabe, Reparatur, Redundanz",
+    ],
+    correctIndex: 1,
+    explanation: "Die 6 R's der Logistik: richtiges Produkt, richtige Menge, richtige Zeit, richtiger Ort, richtige Qualität, richtige Kosten. Sie beschreiben die Anforderungen an ein effizientes Logistiksystem – Erfüllung aller 6 R's = perfekte Logistikleistung.",
+  },
+  {
+    id: "log-004", category: "bwl", difficulty: 2, pareto: 2,
+    question: "Was ist der Unterschied zwischen Just-in-Time (JiT) und Just-in-Sequence (JiS)?",
+    options: [
+      "Beide sind identisch",
+      "JiT: Lieferung zum richtigen Zeitpunkt (Null-Lager-Ziel); JiS: Lieferung in der richtigen Reihenfolge (produktionssynchron, z. B. Kfz-Sitze in Montagereihenfolge)",
+      "JiT ist für Großunternehmen; JiS für KMU",
+      "JiS bezieht sich nur auf den Außenhandel",
+    ],
+    correctIndex: 1,
+    explanation: "Just-in-Time: exakt bedarfsgerechte Anlieferung → minimale Lagerkosten, aber hohe Lieferanforderungen. Just-in-Sequence: Lieferung nicht nur zum richtigen Zeitpunkt, sondern auch in der richtigen Reihenfolge (z. B. Kfz-Sitze in Fahrzeugreihenfolge). Typisch in der Automobilindustrie.",
+  },
+
+  // ─── HSQ Rechnungswesen: Bilanzanalyse, Finanzierung ──────────────────────
+  {
+    id: "rw-015", category: "rechnungswesen", difficulty: 1, pareto: 1,
+    question: "Was zeigt die Liquidität 1. Grades (Cash Ratio)?",
+    options: [
+      "Verhältnis Umlaufvermögen zu kurzfristigen Verbindlichkeiten",
+      "Verhältnis liquider Mittel (Kasse + Bank) zu kurzfristigen Verbindlichkeiten – sofortige Zahlungsfähigkeit",
+      "Eigenkapital geteilt durch Gesamtkapital",
+      "Jahresgewinn geteilt durch Gesamtkapital",
+    ],
+    correctIndex: 1,
+    explanation: "Liquidität 1. Grades = Liquide Mittel / kurzfristige Verbindlichkeiten × 100. Zeigt, ob sofort zahlbar. Richtwert: 10–30 %. Liquidität 2. Grades (Quick Ratio) ergänzt um Forderungen (> 100 % angestrebt). Liquidität 3. Grades (Current Ratio) schließt Vorräte ein (> 200 %).",
+  },
+  {
+    id: "rw-016", category: "rechnungswesen", difficulty: 2, pareto: 1,
+    question: "Was ist der Unterschied zwischen Eigenfinanzierung und Fremdfinanzierung?",
+    options: [
+      "Beide sind identisch – nur unterschiedliche Bezeichnungen",
+      "Eigenfinanzierung: Kapital der Eigentümer (Einlagen, einbehaltene Gewinne) – keine Rückzahlungspflicht; Fremdfinanzierung: Kapital von Gläubigern (Kredit, Anleihe) – Rückzahlung + Zinsen",
+      "Fremdfinanzierung ist immer günstiger als Eigenfinanzierung",
+      "Eigenfinanzierung ist nur für Kapitalgesellschaften möglich",
+    ],
+    correctIndex: 1,
+    explanation: "Eigenfinanzierung (EK): Gesellschaftereinlagen, Gewinnthesaurierung – kein Rückzahlungsdruck, Kontrollrecht der Eigentümer. Fremdfinanzierung (FK): Bankkredit, Lieferantenkredit, Anleihen – Zinspflicht, Tilgung, aber steuerlich abzugsfähige Zinsen. Optimale Kapitalstruktur: Mix aus EK und FK.",
+  },
+  {
+    id: "rw-017", category: "rechnungswesen", difficulty: 2, pareto: 1,
+    question: "Was ist der Unterschied zwischen einer starren und einer flexiblen Plankostenrechnung?",
+    options: [
+      "Beide sind identisch",
+      "Starre Plankostenrechnung: Plankosten sind fix (kein Einfluss der Beschäftigung); Flexible Plankostenrechnung: Plankosten werden an die Ist-Beschäftigung angepasst → Abweichungsanalyse möglich",
+      "Flexible Plankostenrechnung berücksichtigt keine Fixkosten",
+      "Starre Plankostenrechnung ist moderner und genauer",
+    ],
+    correctIndex: 1,
+    explanation: "Starre Plankostenrechnung: Plankosten bleiben bei Planbeschäftigung konstant → keine Abweichungsanalyse nach Ursachen möglich. Flexible Plankostenrechnung: Sollkosten werden auf Ist-Beschäftigung hochgerechnet → Beschäftigungs- und Verbrauchsabweichung trennbar.",
+  },
+  {
+    id: "rw-018", category: "rechnungswesen", difficulty: 2, pareto: 1,
+    question: "Was ist die Prozesskostenrechnung und wann wird sie eingesetzt?",
+    options: [
+      "Eine vereinfachte Form der Zuschlagskalkulation",
+      "Eine Methode, die Gemeinkosten nach Kostentreibern (Prozessen) verursachungsgerecht auf Produkte/Kunden verteilt – besonders bei hohem Gemeinkostenanteil sinnvoll",
+      "Eine Variante der Deckungsbeitragsrechnung",
+      "Die Berechnung von Prozesszeiten in der Produktion",
+    ],
+    correctIndex: 1,
+    explanation: "Prozesskostenrechnung (Activity-Based Costing): Gemeinkosten werden nicht pauschal zugeschlagen, sondern anhand von Kostentreibern (z. B. Anzahl Bestellungen, Rüstvorgänge) auf Aktivitäten verteilt. Vorteile: verursachungsgerechtere Kalkulation, deckt 'Overheadkosten'-Verursacher auf.",
+  },
+
+  // ─── Marketing: Marktforschung, Markenpolitik ─────────────────────────────
+  {
+    id: "ma-012", category: "marketing", difficulty: 1, pareto: 1,
+    question: "Was ist der Unterschied zwischen Primär- und Sekundärmarktforschung?",
+    options: [
+      "Primär: Daten aus dem Internet; Sekundär: Daten aus Eigenerhebungen",
+      "Primärforschung: eigene, neue Datenerhebung (Umfrage, Experiment); Sekundärforschung: Nutzung bereits vorhandener Daten (Statistiken, Berichte, interne Daten)",
+      "Primärforschung ist immer teurer und genauer",
+      "Sekundärforschung ist nur für akademische Zwecke",
+    ],
+    correctIndex: 1,
+    explanation: "Primärforschung (Feldforschung): neue Daten erheben – Befragung (mündlich, schriftlich, online), Beobachtung, Experiment. Genau, aber teuer und zeitaufwändig. Sekundärforschung (Schreibtischforschung): vorhandene Daten auswerten – intern (Verkaufsdaten, CRM) oder extern (Statistisches Bundesamt, Marktstudien). Schneller und günstiger.",
+  },
+  {
+    id: "ma-013", category: "marketing", difficulty: 2, pareto: 2,
+    question: "Was ist Markenpolitik und welche Markierungsstrategien gibt es?",
+    options: [
+      "Markenpolitik = Preisfestsetzung für Markenprodukte",
+      "Markenpolitik = strategischer Aufbau und Pflege von Marken. Strategien: Einzelmarke (jedes Produkt eigene Marke), Dachmarke (alle Produkte unter einer Marke), Familienmarke (Produktgruppe unter einer Marke)",
+      "Markenpolitik betrifft nur Luxusgüter",
+      "Markenpolitik = Vertrieb über Markenhändler",
+    ],
+    correctIndex: 1,
+    explanation: "Markierungsstrategien: Einzelmarke (z. B. Ariel, Fairy = verschiedene P&G-Marken), Dachmarke (z. B. Apple für iPhone, Mac, iPad), Familienmarke (z. B. Nivea für Hautpflege). Eigenmarken des Handels (z. B. Ja! bei REWE) als Alternative zu Herstellermarken.",
+  },
+  {
+    id: "ma-014", category: "marketing", difficulty: 1, pareto: 1,
+    question: "Was versteht man unter dem Vertriebscontrolling?",
+    options: [
+      "Die Kontrolle der Vertriebsmitarbeiter durch den Vorgesetzten",
+      "Planung, Steuerung und Kontrolle der Vertriebsaktivitäten anhand von Kennzahlen (Umsatz, Kundenzahl, Abschlussquote, Deckungsbeitrag je Kunde)",
+      "Die buchhalterische Erfassung aller Verkaufsvorgänge",
+      "Die Qualitätskontrolle der verkauften Produkte",
+    ],
+    correctIndex: 1,
+    explanation: "Vertriebscontrolling: quantitative (Umsatz, Marge, Anzahl Neukunden, Abschlussquote) und qualitative (Kundenzufriedenheit) Steuerung. Instrumente: Soll-Ist-Vergleich, ABC-Analyse der Kunden, Deckungsbeitrag je Kunde/Segment, Pipeline-Management.",
+  },
+  {
+    id: "ma-015", category: "marketing", difficulty: 2, pareto: 2,
+    question: "Was regeln UWG und Werberecht bei Werbemaßnahmen?",
+    options: [
+      "Werbung ist vollständig frei gestaltbar",
+      "Werbung darf nicht irreführend sein, keine verbotenen Vergleiche enthalten, Spam ist verboten (§ 7 UWG), Werbung muss als solche erkennbar sein",
+      "Nur Preisangaben in der Werbung sind gesetzlich geregelt",
+      "Werbebeschränkungen gelten nur für Alkohol und Tabak",
+    ],
+    correctIndex: 1,
+    explanation: "Werberechtliche Grenzen (UWG): Irreführungsverbot (falsche Angaben zu Preis, Qualität, Herkunft), Vergleichsverbot bei Rufschädigung, Spam-Verbot (§ 7 UWG: E-Mail-Werbung nur mit Einwilligung), Schleichwerbungverbot, Einhaltung der Preisangabenverordnung.",
+  },
 ];
 
 export function getQuestionsByCategory(category: string): QuizQuestion[] {
@@ -1132,8 +1699,25 @@ export function getQuestionsByCategory(category: string): QuizQuestion[] {
   return QUESTIONS.filter((q) => q.category === category);
 }
 
-export function getRandomQuestions(count: number, category = "all"): QuizQuestion[] {
-  const pool = getQuestionsByCategory(category);
+/**
+ * Returns randomised questions from the pool.
+ * @param count   Number of questions to return.
+ * @param category  Category filter ("all" = no filter).
+ * @param maxPareto  If set, only include questions with pareto ≤ maxPareto (1 = top 80% exam topics).
+ */
+export function getRandomQuestions(
+  count: number,
+  category = "all",
+  maxPareto?: number
+): QuizQuestion[] {
+  let pool = getQuestionsByCategory(category);
+  if (maxPareto !== undefined) {
+    const filtered = pool.filter((q) => (q.pareto ?? 3) <= maxPareto);
+    // Fall back to full pool if Pareto filter leaves fewer questions than requested
+    pool = filtered.length >= Math.min(count, 5) ? filtered : pool;
+  }
   const shuffled = [...pool].sort(() => Math.random() - 0.5);
   return shuffled.slice(0, Math.min(count, shuffled.length));
 }
+
+export const TOTAL_QUESTIONS = QUESTIONS.length;

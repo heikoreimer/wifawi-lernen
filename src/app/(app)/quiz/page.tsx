@@ -1,10 +1,10 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { Zap, ChevronRight, RotateCcw, Home, CheckCircle2, XCircle, Star, BookOpen } from "lucide-react";
+import { Zap, ChevronRight, RotateCcw, Home, CheckCircle2, XCircle, Star, BookOpen, Target } from "lucide-react";
 import Link from "next/link";
 import { useState, useCallback } from "react";
-import { getRandomQuestions } from "@/data/questions";
+import { getRandomQuestions, TOTAL_QUESTIONS } from "@/data/questions";
 import type { QuizQuestion, QuizCategory } from "@/types";
 import { getUserProgress, saveUserProgress } from "@/lib/db";
 import { updateStreak, todayISO } from "@/lib/utils/streak";
@@ -33,6 +33,7 @@ type Phase = "select" | "quiz" | "result";
 export default function QuizPage() {
   const [phase,        setPhase]        = useState<Phase>("select");
   const [category,     setCategory]     = useState<QuizCategory | "all">("all");
+  const [paretoMode,   setParetoMode]   = useState(true);
   const [questions,    setQuestions]    = useState<QuizQuestion[]>([]);
   const [currentIdx,   setCurrentIdx]   = useState(0);
   const [selected,     setSelected]     = useState<number | null>(null);
@@ -42,7 +43,7 @@ export default function QuizPage() {
   const [feedbackAnim, setFeedbackAnim] = useState<"correct" | "wrong" | "idle">("idle");
 
   const startQuiz = useCallback(() => {
-    const qs = getRandomQuestions(QUIZ_LENGTH, category);
+    const qs = getRandomQuestions(QUIZ_LENGTH, category, paretoMode ? 1 : undefined);
     setQuestions(qs);
     setCurrentIdx(0);
     setSelected(null);
@@ -87,7 +88,7 @@ export default function QuizPage() {
     }
   }, [currentIdx, questions.length]);
 
-  if (phase === "select") return <SelectScreen category={category} onSelect={setCategory} onStart={startQuiz} />;
+  if (phase === "select") return <SelectScreen category={category} onSelect={setCategory} paretoMode={paretoMode} onParetoToggle={() => setParetoMode(v => !v)} onStart={startQuiz} />;
   if (phase === "result") return <ResultScreen results={results} earnedXP={earnedXP} onRestart={() => setPhase("select")} />;
 
   const q = questions[currentIdx];
@@ -215,24 +216,64 @@ export default function QuizPage() {
 
 /* ─── Select Screen ──────────────────────────────────────────────────────── */
 
-function SelectScreen({ category, onSelect, onStart }: {
+function SelectScreen({ category, onSelect, paretoMode, onParetoToggle, onStart }: {
   category: QuizCategory | "all";
   onSelect: (c: QuizCategory | "all") => void;
+  paretoMode: boolean;
+  onParetoToggle: () => void;
   onStart: () => void;
 }) {
   return (
     <motion.div variants={pageVariants} initial="initial" animate="animate"
       className="px-4 pt-6 pb-4">
-      <div className="flex items-center gap-3 mb-6">
+      <div className="flex items-center gap-3 mb-5">
         <div className="w-10 h-10 rounded-xl flex items-center justify-center"
           style={{ background: "color-mix(in srgb, var(--color-primary) 15%, transparent)" }}>
           <Zap size={20} style={{ color: "var(--color-primary)" }} />
         </div>
         <div>
           <h1 className="text-xl font-bold" style={{ color: "var(--color-text)" }}>Quick Quiz</h1>
-          <p className="text-xs" style={{ color: "var(--color-text-2)" }}>{QUIZ_LENGTH} Fragen · ~5 Min</p>
+          <p className="text-xs" style={{ color: "var(--color-text-2)" }}>{TOTAL_QUESTIONS} Fragen · ~5 Min</p>
         </div>
       </div>
+
+      {/* Pareto Mode Toggle */}
+      <button
+        onClick={onParetoToggle}
+        className="w-full flex items-center justify-between rounded-2xl p-4 mb-5 active:opacity-80 transition-opacity"
+        style={{
+          background: paretoMode
+            ? "color-mix(in srgb, #5E5CE6 12%, var(--color-surface))"
+            : "var(--color-surface)",
+          border: `1.5px solid ${paretoMode ? "#5E5CE6" : "var(--color-border)"}`,
+          boxShadow: "0 2px 12px rgba(0,0,0,0.15)",
+        }}
+      >
+        <div className="flex items-center gap-3">
+          <div className="w-8 h-8 rounded-xl flex items-center justify-center"
+            style={{ background: paretoMode ? "#5E5CE6" : "var(--color-surface-2)" }}>
+            <Target size={16} style={{ color: paretoMode ? "#fff" : "var(--color-text-3)" }} />
+          </div>
+          <div className="text-left">
+            <p className="text-sm font-semibold" style={{ color: "var(--color-text)" }}>
+              Pareto-Fokus
+            </p>
+            <p className="text-xs" style={{ color: "var(--color-text-2)" }}>
+              {paretoMode ? "Nur Top-80%-Prüfungsthemen" : "Alle Themen (komplett)"}
+            </p>
+          </div>
+        </div>
+        <div
+          className="w-12 h-7 rounded-full flex items-center px-1 transition-colors duration-200"
+          style={{ background: paretoMode ? "#5E5CE6" : "var(--color-surface-2)" }}
+        >
+          <motion.div
+            className="w-5 h-5 rounded-full bg-white shadow-sm"
+            animate={{ x: paretoMode ? 20 : 0 }}
+            transition={{ type: "spring", stiffness: 500, damping: 35 }}
+          />
+        </div>
+      </button>
 
       <p className="text-sm font-semibold mb-3" style={{ color: "var(--color-text-2)" }}>Fach wählen</p>
 
@@ -247,8 +288,8 @@ function SelectScreen({ category, onSelect, onStart }: {
                 background: isActive
                   ? "color-mix(in srgb, var(--color-primary) 18%, var(--color-surface))"
                   : "var(--color-surface)",
-                border: `1.5px solid ${isActive ? "var(--color-primary)" : "rgba(255,255,255,0.12)"}`,
-                boxShadow: "0 2px 12px rgba(0,0,0,0.3)",
+                border: `1.5px solid ${isActive ? "var(--color-primary)" : "var(--color-border)"}`,
+                boxShadow: "0 2px 12px rgba(0,0,0,0.15)",
               }}>
               <span className="text-xl">{cat.emoji}</span>
               <span className="text-xs font-semibold" style={{

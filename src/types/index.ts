@@ -28,6 +28,8 @@ export interface QuizQuestion {
   correctIndex: number;
   explanation: string;
   difficulty: 1 | 2 | 3;
+  /** Pareto priority: 1 = Top 80% exam weight (must know), 2 = 80–95%, 3 = rest */
+  pareto?: 1 | 2 | 3;
   sourceFile?: string;
 }
 
