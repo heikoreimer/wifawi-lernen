@@ -1,7 +1,8 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { Flame, Star, Trophy, Zap, CreditCard, BookOpen, ChevronRight } from "lucide-react";
+import { Flame, Star, Trophy, Zap, CreditCard, BookOpen, ChevronRight, Target } from "lucide-react";
+import { PARETO_SUBJECTS, getCoreTopics } from "@/data/pareto";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { getUserProgress } from "@/lib/db";
@@ -116,6 +117,59 @@ export default function DashboardPage() {
           accent="danger"
           wide
         />
+      </motion.div>
+
+      {/* Pareto Preview */}
+      <motion.div variants={staggerItem}>
+        <Link href="/pareto">
+          <motion.div
+            whileTap={{ scale: 0.97 }}
+            className="rounded-2xl p-4 active:opacity-80 transition-opacity"
+            style={{
+              background: "linear-gradient(135deg, color-mix(in srgb, #5E5CE6 12%, var(--color-surface)), var(--color-surface))",
+              boxShadow: "var(--shadow-sm)",
+              border: "1px solid color-mix(in srgb, #5E5CE6 20%, transparent)",
+            }}
+          >
+            <div className="flex items-center justify-between mb-3">
+              <div className="flex items-center gap-2">
+                <Target size={16} style={{ color: "#5E5CE6" }} />
+                <span className="text-sm font-semibold" style={{ color: "var(--color-text)" }}>
+                  Prioritäts-Themen
+                </span>
+              </div>
+              <div className="flex items-center gap-1">
+                <span className="text-xs" style={{ color: "#5E5CE6" }}>Pareto-Analyse</span>
+                <ChevronRight size={14} style={{ color: "#5E5CE6" }} />
+              </div>
+            </div>
+            {/* Mini preview: first 3 top topics across subjects */}
+            <div className="space-y-1.5">
+              {PARETO_SUBJECTS.slice(0, 3).map((subject) => {
+                const top = getCoreTopics(subject)[0];
+                return (
+                  <div key={subject.id} className="flex items-center gap-2">
+                    <span
+                      className="text-[10px] font-bold px-1.5 py-0.5 rounded-full shrink-0"
+                      style={{
+                        background: `color-mix(in srgb, ${subject.color} 15%, transparent)`,
+                        color: subject.color,
+                      }}
+                    >
+                      {subject.shortLabel}
+                    </span>
+                    <span className="text-xs truncate" style={{ color: "var(--color-text-2)" }}>
+                      {top?.topic}
+                    </span>
+                  </div>
+                );
+              })}
+              <p className="text-[10px] pt-1" style={{ color: "var(--color-text-3)" }}>
+                6 Fächer · alle Prüfungsjahre seit 2015
+              </p>
+            </div>
+          </motion.div>
+        </Link>
       </motion.div>
 
       {/* Quick Actions */}
