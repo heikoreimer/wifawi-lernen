@@ -13,8 +13,8 @@ export const spring = {
 /* ─── Page Transitions ───────────────────────────────────────────────────── */
 
 export const pageVariants: Variants = {
-  initial: { opacity: 0, y: 12 },
-  animate: { opacity: 1, y: 0, transition: { ...spring.smooth, duration: 0.3 } },
+  initial: { opacity: 1, y: 0 },
+  animate: { opacity: 1, y: 0 },
   exit:    { opacity: 0, y: -8, transition: { duration: 0.15 } },
 };
 
@@ -52,12 +52,13 @@ export const wrongShake: Variants = {
 /* ─── Stagger Container ──────────────────────────────────────────────────── */
 
 export const staggerContainer: Variants = {
-  animate: { transition: { staggerChildren: 0.06, delayChildren: 0.05 } },
+  initial: {},
+  animate: {},
 };
 
 export const staggerItem: Variants = {
-  initial: { opacity: 0, y: 16 },
-  animate: { opacity: 1, y: 0, transition: spring.gentle },
+  initial: { opacity: 1, y: 0 },
+  animate: { opacity: 1, y: 0 },
 };
 
 /* ─── Streak Flame ───────────────────────────────────────────────────────── */

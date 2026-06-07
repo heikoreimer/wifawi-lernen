@@ -127,7 +127,7 @@ export default function DashboardPage() {
             className="rounded-2xl p-4 active:opacity-80 transition-opacity"
             style={{
               background: "linear-gradient(135deg, color-mix(in srgb, #5E5CE6 12%, var(--color-surface)), var(--color-surface))",
-              boxShadow: "var(--shadow-sm)",
+              boxShadow: "0 2px 12px rgba(0,0,0,0.35)", border: "1px solid rgba(255,255,255,0.08)",
               border: "1px solid color-mix(in srgb, #5E5CE6 20%, transparent)",
             }}
           >
@@ -226,7 +226,7 @@ function StatCard({
       className={`rounded-2xl p-4 ${wide ? "col-span-2" : ""}`}
       style={{
         background: "var(--color-surface)",
-        boxShadow: "var(--shadow-sm)",
+        boxShadow: "0 2px 12px rgba(0,0,0,0.35)", border: "1px solid rgba(255,255,255,0.08)",
       }}
     >
       <div className="flex items-center gap-2 mb-1">

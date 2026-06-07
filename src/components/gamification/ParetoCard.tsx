@@ -22,7 +22,7 @@ export function ParetoCard({ subject, defaultExpanded = false }: ParetoCardProps
       layout
       variants={staggerItem}
       className="rounded-2xl overflow-hidden"
-      style={{ background: "var(--color-surface)", boxShadow: "var(--shadow-sm)" }}
+      style={{ background: "var(--color-surface)", boxShadow: "0 2px 12px rgba(0,0,0,0.35)", border: "1px solid rgba(255,255,255,0.08)" }}
     >
       {/* Header */}
       <button
