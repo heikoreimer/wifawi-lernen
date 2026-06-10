@@ -1692,6 +1692,674 @@ export const QUESTIONS: QuizQuestion[] = [
     correctIndex: 1,
     explanation: "Werberechtliche Grenzen (UWG): Irreführungsverbot (falsche Angaben zu Preis, Qualität, Herkunft), Vergleichsverbot bei Rufschädigung, Spam-Verbot (§ 7 UWG: E-Mail-Werbung nur mit Einwilligung), Schleichwerbungverbot, Einhaltung der Preisangabenverordnung.",
   },
+
+  // ═══════════════════════════════════════════════════════════════
+  // NEUE FRAGEN – VWL: Geldpolitik, Elastizität, Wirtschaftsordnung
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: "vwl-007", category: "bwl", difficulty: 1, pareto: 1,
+    question: "Welche Institution ist für die Geldpolitik im Euroraum verantwortlich?",
+    options: [
+      "Die Deutsche Bundesbank",
+      "Die Europäische Zentralbank (EZB)",
+      "Das Bundesfinanzministerium",
+      "Der Internationale Währungsfonds (IWF)",
+    ],
+    correctIndex: 1,
+    explanation: "Die Europäische Zentralbank (EZB) mit Sitz in Frankfurt ist für die einheitliche Geldpolitik im Euroraum zuständig. Primärziel: Preisstabilität (Inflation nahe, aber unter 2 %). Instrumente: Leitzins, Mindestreservesatz, Offenmarktpolitik (An-/Verkauf von Wertpapieren).",
+  },
+  {
+    id: "vwl-008", category: "bwl", difficulty: 2, pareto: 1,
+    question: "Was passiert, wenn die EZB den Leitzins senkt?",
+    options: [
+      "Kredite werden teurer, Investitionen sinken",
+      "Kredite werden günstiger, Investitionen und Konsum steigen (expansive Geldpolitik)",
+      "Die Inflation sinkt sofort auf 0 %",
+      "Der Wechselkurs des Euro steigt automatisch",
+    ],
+    correctIndex: 1,
+    explanation: "Leitzinssenkung = expansive Geldpolitik: Günstiger Kredit → mehr Investitionen + Konsum → Konjunktur belebt sich → Inflationsgefahr steigt. Umgekehrt: Leitzinserhöhung = restriktive Geldpolitik → bremst Inflation, dämpft Wirtschaft.",
+  },
+  {
+    id: "vwl-009", category: "bwl", difficulty: 2, pareto: 1,
+    question: "Was versteht man unter der Preiselastizität der Nachfrage?",
+    options: [
+      "Den absoluten Preisunterschied zwischen zwei Produkten",
+      "Die prozentuale Nachfrageänderung bei einer 1-prozentigen Preisänderung",
+      "Den Anteil der Fixkosten am Verkaufspreis",
+      "Die Geschwindigkeit, mit der sich Preise am Markt anpassen",
+    ],
+    correctIndex: 1,
+    explanation: "Preiselastizität = %ΔNachfrage / %ΔPreis. |e| > 1: elastisch (Nachfrage reagiert stark, z. B. Luxusgüter). |e| < 1: unelastisch (Nachfrage reagiert kaum, z. B. Benzin, Brot). |e| = 1: proportional. Wichtig für Preispolitik: Bei unelastischer Nachfrage lohnt sich Preiserhöhung.",
+  },
+  {
+    id: "vwl-010", category: "bwl", difficulty: 1, pareto: 1,
+    question: "Was ist das Ziel der Sozialen Marktwirtschaft?",
+    options: [
+      "Vollständige Verstaatlichung aller Produktionsmittel",
+      "Freie Marktkräfte kombiniert mit sozialer Absicherung und staatlicher Ordnungsrahmengestaltung",
+      "Ausschließlich staatliche Preiskontrolle",
+      "Gewinnmaximierung ohne staatliche Eingriffe",
+    ],
+    correctIndex: 1,
+    explanation: "Soziale Marktwirtschaft (Ludwig Erhard): Verbindet wirtschaftliche Freiheit (Marktmechanismus, Wettbewerb) mit sozialer Absicherung (Rente, Krankenversicherung, Mindestlohn). Staat setzt Ordnungsrahmen (Kartellrecht, Verbraucherschutz), greift aber nicht in Preisbildung ein.",
+  },
+  {
+    id: "vwl-011", category: "bwl", difficulty: 2, pareto: 2,
+    question: "Welche Wirtschaftsordnung liegt einer zentralen Planwirtschaft zugrunde?",
+    options: [
+      "Preise und Produktion werden durch Angebot und Nachfrage bestimmt",
+      "Staat plant und steuert zentral Produktion, Preise und Verteilung",
+      "Genossenschaften koordinieren alle wirtschaftlichen Entscheidungen",
+      "Unternehmen entscheiden autonom ohne staatliche Einflussnahme",
+    ],
+    correctIndex: 1,
+    explanation: "Planwirtschaft: Zentralbehörde entscheidet über Was, Wie, Für wen produziert wird. Problem: Informationsproblem (Hayek), fehlende Innovationsanreize, Mangelwirtschaft. Gegenpol: Marktwirtschaft – dezentrale Steuerung über Preissignal.",
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // NEUE FRAGEN – Rechtsformen: AG, KG, GbR, eK
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: "rf-001", category: "bwl", difficulty: 1, pareto: 1,
+    question: "Was sind die Organe einer Aktiengesellschaft (AG)?",
+    options: [
+      "Geschäftsführer, Gesellschafterversammlung, Beirat",
+      "Vorstand, Aufsichtsrat, Hauptversammlung",
+      "Komplementär, Kommanditist, Gesellschafterversammlung",
+      "Vorstand, Betriebsrat, Gesellschafterversammlung",
+    ],
+    correctIndex: 1,
+    explanation: "AG-Organe: Vorstand (Geschäftsführung, nach außen), Aufsichtsrat (Kontrolle des Vorstands, bei >500 MA Mitbestimmung), Hauptversammlung (Aktionäre: Grundsatzentscheidungen, Dividende). Mindestkapital: 50.000 €. Haftung: nur Einlage.",
+  },
+  {
+    id: "rf-002", category: "bwl", difficulty: 1, pareto: 1,
+    question: "Wie haftet ein Kommanditist in der KG?",
+    options: [
+      "Unbeschränkt und persönlich mit seinem gesamten Privatvermögen",
+      "Nur bis zur Höhe seiner im Handelsregister eingetragenen Haftsumme",
+      "Gar nicht – er ist vollständig von der Haftung befreit",
+      "Gesamtschuldnerisch zusammen mit dem Komplementär",
+    ],
+    correctIndex: 1,
+    explanation: "Kommanditist: beschränkte Haftung bis zur Haftsumme (Einlage). Nach vollständiger Einzahlung keine weitere Haftung. Komplementär hingegen: unbeschränkt, persönlich, gesamtschuldnerisch. KG eignet sich, wenn ein Partner Kapital einbringen, aber Haftung begrenzen will.",
+  },
+  {
+    id: "rf-003", category: "bwl", difficulty: 1, pareto: 1,
+    question: "Was charakterisiert eine Gesellschaft bürgerlichen Rechts (GbR)?",
+    options: [
+      "Juristische Person mit Haftungsbeschränkung",
+      "Formloser Zusammenschluss mehrerer Personen für gemeinsamen Zweck, alle Gesellschafter haften persönlich",
+      "Mindestkapital von 25.000 € erforderlich",
+      "Pflicht zur Eintragung ins Handelsregister",
+    ],
+    correctIndex: 1,
+    explanation: "GbR (§§ 705 ff. BGB): kein Mindestkapital, kein Handelsregister (nur für Nicht-Kaufleute). Alle Gesellschafter haften gesamtschuldnerisch unbeschränkt. Einfachste Personengesellschaft (z. B. Anwaltskanzlei, Arztpraxis). Seit 2024: kann ins Gesellschaftsregister eingetragen werden.",
+  },
+  {
+    id: "rf-004", category: "bwl", difficulty: 2, pareto: 2,
+    question: "Was ist ein eingetragener Kaufmann (e.K.) und welche Besonderheiten gelten?",
+    options: [
+      "Ein Kaufmann der GmbH, der ins Handelsregister eingetragen ist",
+      "Ein Einzelunternehmer mit kaufmännischem Betrieb, der im Handelsregister eingetragen ist und unbeschränkt haftet",
+      "Eine Gesellschaftsform mit beschränkter Haftung",
+      "Ein Kaufmann, der ausschließlich im E-Commerce tätig ist",
+    ],
+    correctIndex: 1,
+    explanation: "e.K.: Einzelunternehmer mit kaufmännischem Gewerbebetrieb (§ 1 HGB). Pflicht zur HR-Eintragung. Vollkaufmann → alle HGB-Pflichten (Buchführung, Jahresabschluss). Haftung: unbeschränkt mit Privat- und Betriebsvermögen. Kein Mindestkapital. Firma enthält 'e.K.' als Rechtsformzusatz.",
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // NEUE FRAGEN – Handelsrecht (HGB)
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: "hgb-001", category: "recht", difficulty: 1, pareto: 1,
+    question: "Wer ist nach HGB ein Kaufmann?",
+    options: [
+      "Jeder, der eine selbstständige Tätigkeit ausübt",
+      "Jeder, der ein Handelsgewerbe betreibt, sowie Kannkaufleute und Formkaufleute",
+      "Nur Personen mit einem IHK-Kaufmannsabschluss",
+      "Nur Unternehmer mit mehr als 10 Mitarbeitern",
+    ],
+    correctIndex: 1,
+    explanation: "Kaufmannsarten: Istkaufmann (betreibt Handelsgewerbe nach § 1 HGB), Kannkaufmann (Kleingewerbe, freiwillige HR-Eintragung), Formkaufmann (GmbH, AG, OHG, KG: immer Kaufmann kraft Rechtsform). Kaufmannseigenschaft aktiviert HGB-Pflichten: Buchführung, Jahresabschluss, kaufmännische Sorgfalt.",
+  },
+  {
+    id: "hgb-002", category: "recht", difficulty: 1, pareto: 1,
+    question: "Welche Wirkung hat die Eintragung ins Handelsregister?",
+    options: [
+      "Steuerliche Entlastung des Unternehmers",
+      "Deklaratorische Wirkung bei Einzelkaufleuten (nur bestätigt), konstitutive Wirkung bei GmbH/AG (erst mit Eintragung existent)",
+      "Haftungsbefreiung des Unternehmers",
+      "Automatische Steuerbefreiung für 5 Jahre",
+    ],
+    correctIndex: 1,
+    explanation: "Handelsregister: öffentliches Verzeichnis beim Amtsgericht. Deklaratorisch: Existenz unabhängig von Eintragung (z. B. OHG entsteht durch Gesellschaftsvertrag). Konstitutiv: GmbH, AG entstehen erst mit Eintragung. Publizitätswirkung: Eintragungen gelten als bekannt (gutgläubiger Dritter geschützt).",
+  },
+  {
+    id: "hgb-003", category: "recht", difficulty: 2, pareto: 2,
+    question: "Was ist die Firma im handelsrechtlichen Sinne?",
+    options: [
+      "Das gesamte Unternehmen mit allen Vermögenswerten",
+      "Der Name, unter dem ein Kaufmann im Handelsverkehr auftritt und klagen/verklagt werden kann",
+      "Das Markenzeichen eines Unternehmens",
+      "Nur der eingetragene Unternehmensname im Steuerrecht",
+    ],
+    correctIndex: 1,
+    explanation: "Firma (§ 17 HGB): Name des Kaufmanns im Handelsverkehr. Anforderungen: Kennzeichnungskraft, Rechtsformzusatz (GmbH, AG, e.K.). Firmenkontinuität: Bei Inhaberwechsel kann Firma mit Zustimmung weitergeführt werden. Firmenwahrheit: Firma darf nicht irreführen.",
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // NEUE FRAGEN – Insolvenzrecht
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: "inso-001", category: "recht", difficulty: 2, pareto: 1,
+    question: "Wann ist ein Unternehmen zahlungsunfähig im Sinne der InsO?",
+    options: [
+      "Wenn das Unternehmen weniger Eigenkapital als Fremdkapital hat",
+      "Wenn es dauerhaft nicht in der Lage ist, fällige Zahlungspflichten zu erfüllen (Liquiditätslücke > 10 %)",
+      "Wenn der Gewinn für zwei aufeinanderfolgende Jahre negativ ist",
+      "Wenn mehr als 50 % der Mitarbeiter entlassen werden müssen",
+    ],
+    correctIndex: 1,
+    explanation: "§ 17 InsO: Zahlungsunfähigkeit = dauerhaft nicht fähig, fällige Verbindlichkeiten zu bezahlen. Faustregel: Liquiditätslücke > 10 % = zahlungsunfähig. § 19 InsO: Überschuldung (nur jur. Personen): Verbindlichkeiten > Vermögen. GmbH-Geschäftsführer: Insolvenzantrag innerhalb von max. 6 Wochen (StaRUG 2021).",
+  },
+  {
+    id: "inso-002", category: "recht", difficulty: 2, pareto: 2,
+    question: "Was ist der Unterschied zwischen Regelinsolvenz und Verbraucherinsolvenz?",
+    options: [
+      "Regelinsolvenz ist für Privatpersonen, Verbraucherinsolvenz für Unternehmen",
+      "Regelinsolvenz für Unternehmen/Selbstständige, Verbraucherinsolvenz für Privatpersonen mit einfachen Verhältnissen",
+      "Es gibt keinen Unterschied, beide Verfahren sind identisch",
+      "Verbraucherinsolvenz dauert immer 3 Jahre, Regelinsolvenz 10 Jahre",
+    ],
+    correctIndex: 1,
+    explanation: "Regelinsolvenz: für Unternehmen, ehem. Selbstständige mit komplexen Verhältnissen. Verbraucherinsolvenz (§ 304 InsO): für Privatpersonen und ehemalige Kleinunternehmer. Ziel beider: Restschuldbefreiung nach 3 Jahren (seit 2021, vorher 6 Jahre) bei gutem Verhalten.",
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // NEUE FRAGEN – Tarifrecht & Sozialversicherung
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: "tv-001", category: "recht", difficulty: 1, pareto: 1,
+    question: "Was regelt ein Tarifvertrag und zwischen welchen Parteien wird er geschlossen?",
+    options: [
+      "Zwischen Arbeitgeber und einzelnem Arbeitnehmer",
+      "Zwischen Gewerkschaft und Arbeitgeberverband (oder Einzelarbeitgeber) – regelt Mindestarbeitsbedingungen",
+      "Zwischen Bundesregierung und Gewerkschaft",
+      "Nur Lohnhöhen, keine anderen Arbeitsbedingungen",
+    ],
+    correctIndex: 1,
+    explanation: "Tarifvertrag (TVG): Gewerkschaft + Arbeitgeberverband (Verbandstarif) oder Einzelarbeitgeber (Haustarif). Inhalte: Manteltarifvertrag (allg. Bedingungen), Entgelttarifvertrag (Lohn), Rahmentarifvertrag. Günstigkeitsprinzip: Abweichungen zu Gunsten des AN möglich. Allgemeinverbindlichkeit: Bundesminister kann TV auf alle ausdehnen.",
+  },
+  {
+    id: "sv-001", category: "recht", difficulty: 1, pareto: 1,
+    question: "Welche fünf Zweige hat die gesetzliche Sozialversicherung in Deutschland?",
+    options: [
+      "Kranken-, Renten-, Arbeitslosen-, Pflege-, Unfallversicherung",
+      "Kranken-, Renten-, Haftpflicht-, Lebens-, Unfallversicherung",
+      "Kranken-, Renten-, Arbeitslosen-, Berufsunfähigkeits-, Pflegeversicherung",
+      "Kranken-, Kapital-, Arbeitslosen-, Pflege-, Unfallversicherung",
+    ],
+    correctIndex: 0,
+    explanation: "5 Säulen der Sozialversicherung: Krankenversicherung (KV ~14,6 %), Rentenversicherung (RV 18,6 %), Arbeitslosenversicherung (AV 2,6 %), Pflegeversicherung (PV ~3,4 %), Unfallversicherung (UV – nur AG). Beiträge KV/RV/AV/PV je zur Hälfte von AG und AN.",
+  },
+  {
+    id: "est-001", category: "steuern", difficulty: 1, pareto: 1,
+    question: "Wer ist einkommensteuerlich unbeschränkt steuerpflichtig?",
+    options: [
+      "Alle Personen, die in Deutschland erwerbstätig sind",
+      "Natürliche Personen mit Wohnsitz oder gewöhnlichem Aufenthalt im Inland (§ 1 EStG)",
+      "Nur deutsche Staatsbürger",
+      "Juristische Personen mit Sitz in Deutschland",
+    ],
+    correctIndex: 1,
+    explanation: "§ 1 EStG: Unbeschränkte Steuerpflicht bei Wohnsitz ODER gewöhnlichem Aufenthalt (>183 Tage) im Inland. Einkommensarten (§ 2 EStG): Einkünfte aus Gewerbebetrieb, selbstständiger Arbeit, nichtselbstständiger Arbeit, Kapitalvermögen, Vermietung/Verpachtung, sonstige Einkünfte. Lohnsteuer ist Vorauszahlung auf ESt.",
+  },
+  {
+    id: "est-002", category: "steuern", difficulty: 2, pareto: 1,
+    question: "Was ist der Unterschied zwischen Lohnsteuer und Einkommensteuer?",
+    options: [
+      "Lohnsteuer ist eine eigenständige Steuer, Einkommensteuer gilt nur für Selbstständige",
+      "Lohnsteuer ist eine Vorauszahlung auf die Einkommensteuer, wird vom Arbeitgeber einbehalten und ans Finanzamt abgeführt",
+      "Lohnsteuer gilt nur für Beamte, Einkommensteuer für alle anderen",
+      "Es gibt keinen Unterschied – beide Begriffe meinen dasselbe",
+    ],
+    correctIndex: 1,
+    explanation: "Lohnsteuer = Quellensteuer (§ 38 EStG): AG behält sie vom Bruttolohn ein und führt sie ab. Sie ist keine eigene Steuerart, sondern Erhebungsform der ESt für Arbeitnehmer. Im Jahresausgleich (Steuererklärung) wird sie mit der Jahres-ESt verrechnet → Rückzahlung oder Nachzahlung.",
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // NEUE FRAGEN – Buchführung & Bilanz
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: "buch-001", category: "rechnungswesen", difficulty: 1, pareto: 1,
+    question: "Was besagt der Buchungssatz 'Wareneingang 10.000 € / Verbindlichkeiten 10.000 €'?",
+    options: [
+      "Das Unternehmen verkauft Waren auf Ziel",
+      "Das Unternehmen kauft Waren auf Ziel: Aufwand steigt, Verbindlichkeit entsteht",
+      "Barmittel sinken, Verbindlichkeiten steigen",
+      "Das Unternehmen zahlt eine Rechnung",
+    ],
+    correctIndex: 1,
+    explanation: "Buchungssatz: Soll / Haben. Kauf auf Ziel: Wareneingang (Aufwandskonto, Soll) an Verbindlichkeiten aLuL (Passivkonto, Haben). Buchhalterische Regel: Aktiv- und Aufwandskonten werden im Soll erhöht, Passiv- und Ertragskonten im Haben. Bezahlung: Verbindlichkeiten (Soll) / Bank (Haben).",
+  },
+  {
+    id: "buch-002", category: "rechnungswesen", difficulty: 2, pareto: 1,
+    question: "Was steht auf der Aktivseite und was auf der Passivseite der Bilanz?",
+    options: [
+      "Aktiva = Schulden; Passiva = Vermögen",
+      "Aktiva = Vermögen (Mittelverwendung); Passiva = Kapital/Schulden (Mittelherkunft)",
+      "Aktiva = kurzfristig; Passiva = langfristig",
+      "Aktiva = Erträge; Passiva = Aufwendungen",
+    ],
+    correctIndex: 1,
+    explanation: "Bilanzgleichung: Aktiva = Passiva. Aktivseite: Anlagevermögen (Maschinen, Gebäude, Patente) + Umlaufvermögen (Vorräte, Forderungen, Kasse). Passivseite: Eigenkapital (EK) + Fremdkapital (Langfristige/kurzfristige Verbindlichkeiten, Rückstellungen). Bilanzsumme immer gleich auf beiden Seiten.",
+  },
+  {
+    id: "buch-003", category: "rechnungswesen", difficulty: 2, pareto: 1,
+    question: "Was zeigt die GuV (Gewinn- und Verlustrechnung)?",
+    options: [
+      "Den aktuellen Vermögensstand des Unternehmens",
+      "Alle Erträge und Aufwendungen einer Periode – das Ergebnis ist Gewinn oder Verlust",
+      "Nur die Cashflows aus dem laufenden Betrieb",
+      "Die Liquidität des Unternehmens zu einem Stichtag",
+    ],
+    correctIndex: 1,
+    explanation: "GuV: Periodenerfolgsrechnung. Erträge (Umsatzerlöse, sonstige Erträge) – Aufwendungen (Material, Personal, Abschreibungen, Zinsen) = Jahresüberschuss oder -fehlbetrag. Pflicht nach HGB für Kaufleute. Anders als Bilanz (Stichtagsbetrachtung) zeigt GuV den Zeitraum.",
+  },
+  {
+    id: "buch-004", category: "rechnungswesen", difficulty: 2, pareto: 1,
+    question: "Was ist der Unterschied zwischen Handelsbilanz und Steuerbilanz?",
+    options: [
+      "Es gibt keinen Unterschied – beide sind identisch",
+      "Handelsbilanz nach HGB (für Gläubigerschutz), Steuerbilanz nach EStG/KStG (Steuerbemessungsgrundlage) – Unterschiede bei Bewertungswahlrechten",
+      "Handelsbilanz nur für AGs, Steuerbilanz für alle Unternehmen",
+      "Handelsbilanz zeigt den Cashflow, Steuerbilanz das Eigenkapital",
+    ],
+    correctIndex: 1,
+    explanation: "Maßgeblichkeitsprinzip (§ 5 EStG): Steuerbilanz folgt grundsätzlich der Handelsbilanz. Aber: Steuerrecht hat eigene Wahlrechte (z. B. GWG-Regelung, Bewertungsunterschiede). Unterschiede erzeugen latente Steuern. Ziel Handelsbilanz: vorsichtig (Gläubigerschutz). Steuerbilanz: korrekte Steuerlast.",
+  },
+  {
+    id: "buch-005", category: "rechnungswesen", difficulty: 2, pareto: 2,
+    question: "Was sind Kostenarten, Kostenstellen und Kostenträger in der Kosten- und Leistungsrechnung?",
+    options: [
+      "Drei verschiedene Bezeichnungen für dieselbe Sache",
+      "Kostenarten (Was?), Kostenstellen (Wo?), Kostenträger (Wofür?) – die drei Stufen der KoLei",
+      "Kostenarten = variable Kosten; Kostenstellen = Fixkosten; Kostenträger = Gemeinkosten",
+      "Alle drei sind Bestandteile der Finanzbuchhaltung",
+    ],
+    correctIndex: 1,
+    explanation: "KoLei-Stufenmodell: 1. Kostenartenrechnung (Was entstehen für Kosten? z. B. Materialkosten, Personalkosten) → 2. Kostenstellenrechnung (Wo entstehen sie? z. B. im BAB auf Abteilungen) → 3. Kostenträgerrechnung (Wofür? Selbstkosten je Produkt/Auftrag). Grundlage für Kalkulation und Controlling.",
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // NEUE FRAGEN – Investition: Kapitalwertmethode
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: "inv-001", category: "rechnungswesen", difficulty: 2, pareto: 1,
+    question: "Was sagt ein positiver Kapitalwert (NPV) bei der Kapitalwertmethode aus?",
+    options: [
+      "Die Investition verursacht mehr Kosten als Erträge",
+      "Die Investition ist vorteilhaft: Barwert der Einzahlungsüberschüsse übersteigt die Anschaffungsauszahlung",
+      "Das Unternehmen hat mehr Eigenkapital als Fremdkapital",
+      "Die Investition zahlt sich genau nach der Amortisationszeit aus",
+    ],
+    correctIndex: 1,
+    explanation: "Kapitalwertmethode (NPV = Net Present Value): Alle zukünftigen Cashflows werden mit dem Kalkulationszinssatz auf heute (t=0) abgezinst. KW = Σ(CFt / (1+i)^t) – I₀. KW > 0: Investition lohnt sich (übersteigt Alternativrendite). KW < 0: besser keine Investition. KW = 0: genau rentabel.",
+  },
+  {
+    id: "inv-002", category: "rechnungswesen", difficulty: 2, pareto: 1,
+    question: "Wie unterscheidet sich Leasing von Kauf in der Bilanz?",
+    options: [
+      "Leasing und Kauf haben immer dieselbe Bilanzwirkung",
+      "Beim Kauf wird das Gut aktiviert; Operating-Leasing erscheint nicht in der Bilanz (off-balance), Financial-Leasing beim Leasingnehmer aktiviert",
+      "Leasing ist steuerlich immer günstiger als Kauf",
+      "Beim Leasing gehört das Gut immer dem Leasingnehmer",
+    ],
+    correctIndex: 1,
+    explanation: "Operating-Leasing (Mietcharakter): Leasingobjekt beim Leasinggeber aktiviert → Leasingrate = Aufwand. Financial-Leasing (Finanzierungscharakter): wirtschaftlicher Eigentümer = Leasingnehmer → Aktivierung + Verbindlichkeit (IFRS 16). Vorteil Leasing: keine hohe Anfangsinvestition, Liquidität bleibt. Nachteil: langfristige Bindung, Gesamtkosten höher.",
+  },
+  {
+    id: "inv-003", category: "rechnungswesen", difficulty: 2, pareto: 2,
+    question: "Was ist Factoring und welchen Vorteil bietet es?",
+    options: [
+      "Eine Methode der Lageroptimierung",
+      "Verkauf von Forderungen an ein Factoringunternehmen – sofortige Liquidität, Forderungsausfallrisiko geht über",
+      "Eine Art der Mitarbeiterführung",
+      "Eine Bewertungsmethode für Vorräte",
+    ],
+    correctIndex: 1,
+    explanation: "Factoring: Unternehmen verkauft Forderungen aLuL an Factor (Bank/Spezialinstitut). Vorteile: sofortige Liquidität (80–90 % sofort), Delkredererisiko beim Factor (echtes Factoring), Entlastung Debitorenmanagement. Kosten: Factorgebühr + Zinsen. Bilanzeffekt: Forderungen sinken, Liquidität steigt.",
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // NEUE FRAGEN – Unternehmensführung: Lean, BSC, TQM, Change
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: "uf-001", category: "bwl", difficulty: 1, pareto: 1,
+    question: "Was ist das Ziel von Lean Management?",
+    options: [
+      "Maximale Mitarbeiterzahl zu halten",
+      "Verschwendung (Muda) eliminieren, Wertschöpfung steigern, Prozesse kontinuierlich verbessern (KVP)",
+      "Nur die Lagerkosten zu senken",
+      "Vollständige Automatisierung aller Prozesse",
+    ],
+    correctIndex: 1,
+    explanation: "Lean Management (Toyota-Produktionssystem): Sieben Verschwendungsarten (Muda): Transport, Wartezeiten, Überproduktion, Überbearbeitung, Bestände, Bewegung, Fehler. KVP (Kaizen): kontinuierliche, schrittweise Verbesserung durch alle Mitarbeiter. 5S: Sortieren, Setzen, Säubern, Standardisieren, Selbstdisziplin.",
+  },
+  {
+    id: "uf-002", category: "bwl", difficulty: 2, pareto: 1,
+    question: "Was sind die vier Perspektiven der Balanced Scorecard (BSC)?",
+    options: [
+      "Kosten, Zeit, Qualität, Flexibilität",
+      "Finanzen, Kunden, interne Prozesse, Lernen & Entwicklung",
+      "Strategie, Taktik, Operation, Kontrolle",
+      "Produktion, Vertrieb, Personal, Finanzen",
+    ],
+    correctIndex: 1,
+    explanation: "BSC (Kaplan/Norton): ganzheitliches Steuerungsinstrument. Finanzperspektive (Shareholder-Wert, ROI), Kundenperspektive (Zufriedenheit, Marktanteil), Interne Prozessperspektive (Prozessqualität, Durchlaufzeit), Lern-/Entwicklungsperspektive (MA-Kompetenz, Innovation). Verknüpft Strategie mit operativen Kennzahlen.",
+  },
+  {
+    id: "uf-003", category: "bwl", difficulty: 2, pareto: 1,
+    question: "Was sind typische Phasen des Change Managements nach Lewin?",
+    options: [
+      "Planen, Durchführen, Kontrollieren",
+      "Auftauen (Unfreeze), Verändern (Change), Einfrieren (Refreeze)",
+      "Initiieren, Implementieren, Institutionalisieren, Evaluieren",
+      "Analyse, Konzept, Pilot, Rollout",
+    ],
+    correctIndex: 1,
+    explanation: "Lewins 3-Phasen-Modell: Unfreeze (Problembewusstsein schaffen, Motivation zur Veränderung), Change (neue Verhaltensweisen einführen, Pilotprojekte), Refreeze (neue Zustände stabilisieren, in Kultur verankern). Wichtig: Widerstände durch Information, Beteiligung und Unterstützung überwinden.",
+  },
+  {
+    id: "uf-004", category: "bwl", difficulty: 2, pareto: 2,
+    question: "Was sind Grundsätze des Total Quality Management (TQM)?",
+    options: [
+      "Qualität ist ausschließlich Aufgabe der Qualitätskontrollabteilung",
+      "Kundenorientierung, Mitarbeiterbeteiligung, Prozessdenken, kontinuierliche Verbesserung – Qualität geht alle an",
+      "TQM bedeutet nur ISO-Zertifizierung",
+      "TQM ist nur in der Produktion anwendbar",
+    ],
+    correctIndex: 1,
+    explanation: "TQM: umfassendes Qualitätsmanagement. Prinzipien: Kundenorientierung (intern/extern), Null-Fehler-Prinzip, präventive statt korrektive Qualitätssicherung, KVP (PDCA-Zyklus: Plan-Do-Check-Act), Mitarbeiterverantwortung auf allen Ebenen. ISO 9001 ist Zertifizierungsstandard für QM-Systeme.",
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // NEUE FRAGEN – HSQ Management: Netzplantechnik, Risiko, IT
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: "pm-001", category: "bwl", difficulty: 2, pareto: 1,
+    question: "Was ist der kritische Pfad im Netzplan?",
+    options: [
+      "Der kürzeste Weg durch das Projekt",
+      "Die längste Abfolge von Vorgängen ohne Puffer – bestimmt die Mindestprojektdauer",
+      "Der teuerste Teil des Projekts",
+      "Die Aktivitäten mit dem höchsten Risiko",
+    ],
+    correctIndex: 1,
+    explanation: "Kritischer Pfad (CPM – Critical Path Method): Vorgangskette mit totalem Puffer = 0. Jede Verzögerung auf dem kritischen Pfad verzögert das gesamte Projekt. Nicht-kritische Vorgänge haben Puffer (freier Puffer, Gesamtpuffer). Gantt-Diagramm: grafische Darstellung von Vorgängen über Zeit (einfacher, kein Puffer ersichtlich).",
+  },
+  {
+    id: "pm-002", category: "bwl", difficulty: 2, pareto: 2,
+    question: "Was sind die vier Schritte im Risikomanagement-Prozess?",
+    options: [
+      "Planen, Ausführen, Prüfen, Handeln",
+      "Risikoidentifikation, Risikobewertung, Risikosteuerung, Risikocontrolling",
+      "Analyse, Strategie, Implementierung, Monitoring",
+      "Erkennen, Ignorieren, Dokumentieren, Eskalieren",
+    ],
+    correctIndex: 1,
+    explanation: "Risikomanagement: 1. Identifikation (SWOT, Checklisten, Brainstorming) → 2. Bewertung (Eintrittswahrscheinlichkeit × Schadenshöhe = Risikowert, Risikomatrix) → 3. Steuerung (vermeiden, reduzieren, übertragen/versichern, akzeptieren) → 4. Controlling (Risikoregister, Frühwarnindikatoren).",
+  },
+  {
+    id: "it-001", category: "bwl", difficulty: 1, pareto: 1,
+    question: "Was ist ein ERP-System und welche Funktionen integriert es?",
+    options: [
+      "Ein System ausschließlich für die Finanzbuchhaltung",
+      "Enterprise Resource Planning: integrierte Software, die alle Unternehmensbereiche verbindet (Einkauf, Produktion, Vertrieb, HR, FiBu)",
+      "Ein Programm nur für die Personalverwaltung",
+      "Ein externes Rechenzentrum für Datensicherung",
+    ],
+    correctIndex: 1,
+    explanation: "ERP-System (z. B. SAP, Microsoft Dynamics): Zentrales IT-System mit gemeinsamer Datenbasis. Module: FiBu, Controlling, Einkauf, Lagerverwaltung, Produktion, Vertrieb, HR. Vorteile: keine Doppelerfassung, Echtzeitdaten, durchgängige Prozesse. Einführung: teuer und aufwendig (Change Management!).",
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // NEUE FRAGEN – Logistik: ABC, Lager, SCM, Make-or-Buy, INCO
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: "log-005", category: "bwl", difficulty: 1, pareto: 1,
+    question: "Was ist die ABC-Analyse in der Materialwirtschaft?",
+    options: [
+      "Eine Methode zur Mitarbeiterbeurteilung",
+      "Klassifizierung von Artikeln nach ihrem Wertanteil: A (wenige Artikel, hoher Wert), B (mittel), C (viele Artikel, geringer Wert)",
+      "Ein Buchführungssystem für drei Kontenklassen",
+      "Eine Methode zur Bewertung von Lieferanten nach Alphabet",
+    ],
+    correctIndex: 1,
+    explanation: "ABC-Analyse (Pareto-Prinzip): A-Artikel ≈ 20 % der Teile = 80 % des Wertes → intensive Verwaltung (exakte Bedarfsermittlung, geringe Bestände). B-Artikel: 30 % Teile = 15 % Wert → mittlerer Aufwand. C-Artikel: 50 % Teile = 5 % Wert → einfache Verwaltung, Sammelbestellung. XYZ-Analyse ergänzt nach Bedarfskonstanz.",
+  },
+  {
+    id: "log-006", category: "bwl", difficulty: 2, pareto: 1,
+    question: "Welche Kennzahl gibt an, wie oft der Lagerbestand pro Jahr umgeschlagen wird?",
+    options: [
+      "Lagerreichweite in Tagen",
+      "Lagerumschlagshäufigkeit = Jahresverbrauch / durchschnittlicher Lagerbestand",
+      "Lagerkosten in Prozent des Einkaufspreises",
+      "Bestellhäufigkeit pro Jahr",
+    ],
+    correctIndex: 1,
+    explanation: "Lagerumschlagshäufigkeit (LU) = Jahresverbrauch / Ø-Lagerbestand. Hoher LU = geringer Bestand → niedrige Lagerkosten, aber Fehlmengenrisiko. Lagerreichweite (Tage) = 360 / LU. Zusammen mit Bestellkosten und Lagerkosten Grundlage der optimalen Bestellmenge (Andler).",
+  },
+  {
+    id: "log-007", category: "bwl", difficulty: 2, pareto: 1,
+    question: "Was versteht man unter Supply Chain Management (SCM)?",
+    options: [
+      "Die Verwaltung des internen Lagers",
+      "Ganzheitliche Koordination aller Material- und Informationsflüsse vom Lieferanten bis zum Endkunden über Unternehmensgrenzen hinweg",
+      "Ausschließlich die Optimierung der Transportlogistik",
+      "Die Beschaffung von Rohstoffen aus dem Ausland",
+    ],
+    correctIndex: 1,
+    explanation: "SCM: Planung und Steuerung der gesamten Lieferkette (Beschaffung → Produktion → Distribution → Kunde). Ziele: geringe Lagerbestände, hohe Liefertreue, Kostensenkung, Transparenz. Instrumente: EDI (Datenaustausch), VMI (Vendor Managed Inventory), Collaborative Planning. Bullwhip-Effekt: Nachfrageschwankungen verstärken sich in der Kette.",
+  },
+  {
+    id: "log-008", category: "bwl", difficulty: 2, pareto: 2,
+    question: "Wann sollte ein Unternehmen laut Make-or-Buy-Analyse selbst produzieren ('Make')?",
+    options: [
+      "Immer, weil eigene Produktion immer günstiger ist",
+      "Wenn eigene Kernkompetenz genutzt wird, strategische Bedeutung hoch ist oder variable Kosten der Eigenproduktion unter dem Einstandspreis liegen",
+      "Nur wenn externe Lieferanten nicht existieren",
+      "Wenn das Unternehmen Überkapazitäten hat, unabhängig von Kosten",
+    ],
+    correctIndex: 1,
+    explanation: "Make-or-Buy: qualitative Kriterien (Kernkompetenz, Geheimhaltung, Lieferantenzuverlässigkeit) + quantitative (variable Eigenkosten vs. Einkaufspreis). Make bei: Kernkompetenz, wenn kv_eigen < Einkaufspreis, strategische Abhängigkeit vermeiden. Buy bei: Nicht-Kernkompetenz, Flexibilität, Kapazitätsmangel.",
+  },
+  {
+    id: "log-009", category: "bwl", difficulty: 2, pareto: 2,
+    question: "Was bedeutet 'CIF' als INCOTERM?",
+    options: [
+      "Kosten trägt ausschließlich der Käufer",
+      "Cost, Insurance, Freight: Verkäufer trägt Kosten, Versicherung und Fracht bis zum Bestimmungshafen – Gefahr geht beim Verladen über",
+      "Der Käufer holt die Ware am Lager des Verkäufers ab",
+      "Der Verkäufer liefert frei Haus inklusive Zoll und Einfuhrsteuer",
+    ],
+    correctIndex: 1,
+    explanation: "INCOTERMS (Internationale Handelsklauseln der ICC): Regeln Kosten- und Gefahrübergang. CIF: Seller pays Cost, Insurance, Freight bis Zielhafen, ABER Gefahr geht bei Verladen im Abgangshafen über. DDP (Delivered Duty Paid): maximale Verpflichtung für Verkäufer. EXW (Ex Works): minimale Verpflichtung. Wichtig: CIF/CFR nur Seetransport.",
+  },
+  {
+    id: "log-010", category: "bwl", difficulty: 1, pareto: 2,
+    question: "Was sind die Fertigungsarten nach steigender Wiederholhäufigkeit?",
+    options: [
+      "Fließfertigung, Serienfertigung, Einzelfertigung, Massenfertigung",
+      "Einzelfertigung, Serienfertigung, Massenfertigung",
+      "Kleinserienfertigung, Großserienfertigung, Werkstattfertigung",
+      "Auftragsfertigung, Lagerfertigung, Hybridfertigung",
+    ],
+    correctIndex: 1,
+    explanation: "Fertigungsarten: Einzelfertigung (individuelle Produkte, z. B. Brücken, Schiffe) → Serienfertigung (begrenzte Stückzahl gleicher Produkte, z. B. Maschinen) → Massenfertigung (kontinuierlich große Mengen, z. B. Schrauben, Zigaretten). Einzel: hohe Flexibilität, hohe Stückkosten. Massen: geringe Flexibilität, niedrige Stückkosten.",
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // NEUE FRAGEN – Marketing: International, Digital, CRM
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: "ma-016", category: "marketing", difficulty: 2, pareto: 1,
+    question: "Was sind typische Markteintrittsformen beim Export?",
+    options: [
+      "Nur direkter Export über eigene Niederlassung",
+      "Direkter Export (eigene Tochter/Niederlassung), indirekter Export (Handelsvertreter, Importeur), Joint Venture, Lizenzierung, Franchising",
+      "Nur Franchising und Lizenzierung",
+      "Export ist nur über staatliche Außenhandelsbehörden möglich",
+    ],
+    correctIndex: 1,
+    explanation: "Internationalisierungsformen: indirekter Export (geringes Risiko, geringe Kontrolle) → direkter Export (eigene Mitarbeiter) → Kooperationen (JV, Lizenz) → Direktinvestition (Tochtergesellschaft, höchste Kontrolle + Risiko). Wichtig: Länderrisiko, Währungsrisiko, kulturelle Unterschiede (Hofstede-Dimensionen).",
+  },
+  {
+    id: "ma-017", category: "marketing", difficulty: 1, pareto: 1,
+    question: "Was sind Kernelemente des Customer Relationship Managements (CRM)?",
+    options: [
+      "Ausschließlich die Verwaltung von Kundenadressen",
+      "Systematische Erfassung und Analyse von Kundendaten, Kundenbindungsmaßnahmen, Wert des Kunden (CLV) über gesamte Geschäftsbeziehung",
+      "CRM ist nur eine Software, kein Managementkonzept",
+      "CRM bedeutet ausschließlich Beschwerdemanagement",
+    ],
+    correctIndex: 1,
+    explanation: "CRM: Strategie + Technologie zur Pflege von Kundenbeziehungen. Phasen: Kundenaquisition, -bindung, -rückgewinnung. Customer Lifetime Value (CLV) = Gesamtwert eines Kunden über alle Transaktionen. 80/20-Regel: 20 % der Kunden = 80 % des Umsatzes → ABC-Analyse der Kunden. CRM-Software: Salesforce, SAP CRM.",
+  },
+  {
+    id: "ma-018", category: "marketing", difficulty: 1, pareto: 2,
+    question: "Was unterscheidet E-Commerce von stationärem Handel?",
+    options: [
+      "E-Commerce ist nur für B2C, stationärer Handel nur für B2B",
+      "E-Commerce: 24/7 Verfügbarkeit, globale Reichweite, Preistransparenz, höhere Retouren-Quote; digitale Zahlungsmethoden und Datenschutz (DSGVO) relevant",
+      "Im E-Commerce gibt es kein Widerrufsrecht",
+      "E-Commerce ist teurer als stationärer Handel",
+    ],
+    correctIndex: 1,
+    explanation: "E-Commerce Besonderheiten: Fernabsatzrecht (§§ 312b ff. BGB): 14-tägiges Widerrufsrecht, Informationspflichten. DSGVO: Einwilligung für Cookies, Datenschutzerklärung. Multichannel/Omnichannel: Verzahnung online/offline. Conversion Rate, Warenkorbwert als KPIs. Chancen: Skalierbarkeit. Herausforderungen: Preiskampf, Logistik.",
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // NEUE FRAGEN – Führung: Moderation, Präsentation, AEVO, Führungsstile
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: "fz-003", category: "personal", difficulty: 1, pareto: 1,
+    question: "Was sind Grundregeln erfolgreicher Moderation einer Gruppenarbeit?",
+    options: [
+      "Moderator dominiert die Diskussion und gibt Lösungen vor",
+      "Moderator ist neutral, strukturiert den Prozess, aktiviert alle Teilnehmer, visualisiert Ergebnisse und sichert Ergebnisse",
+      "Moderation ist nur bei Konflikten notwendig",
+      "Der Moderator bewertet alle Beiträge",
+    ],
+    correctIndex: 1,
+    explanation: "Moderationsregeln: Neutralität (Moderator leitet Prozess, nicht Inhalt), Visualisierung (Flipchart, Metaplan), Aktivierung aller TN (Kartenabfrage, Kleingruppenarbeit), Zeitmanagement, Ergebnissicherung (Protokoll, Foto). Phasen: Ankommen → Erarbeiten → Beschließen → Abschließen.",
+  },
+  {
+    id: "fz-004", category: "personal", difficulty: 1, pareto: 1,
+    question: "Welche Struktur sollte eine professionelle Präsentation haben?",
+    options: [
+      "Einstieg → Hauptteil → Schluss – in beliebiger Reihenfolge",
+      "Einleitung (Attention), Hauptteil (gegliedert mit Überleitungen), Schluss (Zusammenfassung, Handlungsaufforderung) – roter Faden, 1-3-1-Prinzip",
+      "Nur Folien ohne mündlichen Vortrag",
+      "Beginn direkt mit Details, dann Fazit am Ende",
+    ],
+    correctIndex: 1,
+    explanation: "Präsentationsaufbau: Einleitung (Begrüßung, Agenda, Relevanz), Hauptteil (3 Kernaussagen, Visualisierungen, Übergänge), Schluss (Zusammenfassung, nächste Schritte, Diskussion). Rhetorische Mittel: Blickkontakt, freies Sprechen, Körpersprache. IHK-Prüfung: 10 min Präsentation + 20 min Fachgespräch.",
+  },
+  {
+    id: "fz-005", category: "personal", difficulty: 2, pareto: 1,
+    question: "Was regelt das BBiG zur Ausbildung (AEVO-Grundlagen)?",
+    options: [
+      "Nur die Vergütung der Auszubildenden",
+      "Pflichten von Ausbilder und Auszubildendem, Ausbildungsplan, schriftlicher Ausbildungsvertrag, Prüfungen, Zeugnis",
+      "Ausschließlich die IHK-Prüfungsordnung",
+      "Nur die Mindestdauer der Ausbildung",
+    ],
+    correctIndex: 1,
+    explanation: "BBiG: Ausbildungsvertrag schriftlich, vor Beginn beim Auszubildenden. Ausbildereignung (AEVO): fachlich + pädagogisch. Ausbildungsrahmenplan (bundesweit) + betrieblicher Ausbildungsplan. Pflichten Ausbilder: planmäßige Ausbildung, Freistellung für Berufsschule, keine berufsfremden Tätigkeiten. Probezeit: 1–4 Monate.",
+  },
+  {
+    id: "fz-006", category: "personal", difficulty: 2, pareto: 1,
+    question: "Was beschreibt das situative Führungsmodell nach Hersey und Blanchard?",
+    options: [
+      "Führungsstil ist immer autoritär, unabhängig von der Situation",
+      "Führungsstil richtet sich nach dem Reifegrad des Mitarbeiters: niedrig = Anweisen, mittel = Überzeugend/Partizipativ, hoch = Delegieren",
+      "Nur der Mitarbeiter bestimmt seinen eigenen Führungsstil",
+      "Führung funktioniert nur in Teams mit mehr als 10 Personen",
+    ],
+    correctIndex: 1,
+    explanation: "Situatives Führen: 4 Stile je nach Reifegrad (Können + Wollen): R1 (niedrig) → S1 Anweisen (hohe Aufgaben-, geringe Beziehungsorientierung). R2 → S2 Überzeugen (hoch/hoch). R3 → S3 Partizipieren (gering/hoch). R4 (hoch) → S4 Delegieren (gering/gering). Flexibilität des Führers ist Schlüssel.",
+  },
+  {
+    id: "fz-007", category: "personal", difficulty: 2, pareto: 2,
+    question: "Was unterscheidet transformationale von transaktionaler Führung?",
+    options: [
+      "Beide Führungsstile sind identisch",
+      "Transaktional: Austauschprinzip (Leistung gegen Belohnung). Transformational: Führung durch Vision, Inspiration und Förderung intrinsischer Motivation",
+      "Transformationale Führung ist nur in Start-ups möglich",
+      "Transaktionale Führung nutzt ausschließlich Bestrafung",
+    ],
+    correctIndex: 1,
+    explanation: "Transaktionale Führung (Bass): klare Zielsetzung, Belohnungssystem, Kontrolle (Management by Exception). Transformationale Führung: 4I's – Idealized Influence (Vorbild), Inspirational Motivation (Vision), Intellectual Stimulation (Kreativität fordern), Individualized Consideration (MA individuell fördern). Studien: transformational wirksamer bei Innovation.",
+  },
+  {
+    id: "fz-008", category: "personal", difficulty: 1, pareto: 1,
+    question: "Welche Methoden eignen sich für die betriebliche Ausbildung (On-the-Job)?",
+    options: [
+      "Nur Frontalunterricht in der Berufsschule",
+      "Unterweisung nach der 4-Stufen-Methode, Leittextmethode, Job Rotation, Projektarbeit im Betrieb",
+      "Ausschließlich externe Seminare",
+      "Nur Selbststudium mit Fachliteratur",
+    ],
+    correctIndex: 1,
+    explanation: "4-Stufen-Methode (Unterweisung): 1. Vorbereiten (MA neugierig machen, Vorkenntnisse ermitteln) 2. Vormachen + Erklären 3. Nachmachen lassen + korrigieren 4. Üben lassen + Erfolgskontrolle. Leittextmethode: MA erarbeitet mit Leittexten selbstständig → selbstgesteuertes Lernen. Job Rotation: Abteilungswechsel für Überblick.",
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // NEUE FRAGEN – Bilanzanalyse & Working Capital
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: "ba-001", category: "rechnungswesen", difficulty: 2, pareto: 1,
+    question: "Was besagt die Goldene Bilanzregel?",
+    options: [
+      "Eigenkapital muss immer größer sein als Fremdkapital",
+      "Anlagevermögen soll durch langfristiges Kapital (EK + langfristiges FK) finanziert sein; Umlaufvermögen durch kurzfristiges Kapital",
+      "Die Bilanzsumme darf nie sinken",
+      "Alle Verbindlichkeiten müssen in Gold besichert sein",
+    ],
+    correctIndex: 1,
+    explanation: "Goldene Bilanzregel (Fristenkongruenz): AV ≤ EK + langfristiges FK (sonst Finanzierungsrisiko). Erweiterung: UV ≥ kurzfristiges FK = positives Working Capital. Working Capital = UV – kurzfristiges FK. Goldene Finanzierungsregel: Kapitalbindungsdauer = Kapitalüberlassungsdauer.",
+  },
+  {
+    id: "ba-002", category: "rechnungswesen", difficulty: 2, pareto: 2,
+    question: "Wie berechnet sich der Return on Equity (ROE) und was sagt er aus?",
+    options: [
+      "ROE = Umsatz / Eigenkapital",
+      "ROE = Jahresüberschuss / Eigenkapital × 100 – zeigt die Verzinsung des eingesetzten Eigenkapitals",
+      "ROE = Gesamtkapital / Gewinn × 100",
+      "ROE = Eigenkapital / Bilanzsumme",
+    ],
+    correctIndex: 1,
+    explanation: "Return on Equity (Eigenkapitalrendite): Jahresüberschuss / EK × 100. Vergleichsmaßstab: risikofreier Zinssatz. Leverage-Effekt: Fremdkapitaleinsatz erhöht ROE, solange FK-Zinssatz < GK-Rendite. ROE > ROI → EK wird produktiver eingesetzt als GK. Wichtige Kennzahl für Investoren.",
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // NEUE FRAGEN – Existenzgründung
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: "eg-001", category: "bwl", difficulty: 1, pareto: 1,
+    question: "Welche Bestandteile gehören zu einem vollständigen Businessplan?",
+    options: [
+      "Nur Umsatzprognose und Rechtsformwahl",
+      "Executive Summary, Geschäftsidee, Marktanalyse, Marketing, Rechtsform, Finanzplanung (Kapitalbedarfs-, Rentabilitäts-, Liquiditätsplanung)",
+      "Nur Lebenslauf des Gründers und Produktbeschreibung",
+      "Businessplan ist gesetzlich nicht vorgeschrieben und damit optional",
+    ],
+    correctIndex: 1,
+    explanation: "Businessplan: Pflichtbestandteile für Banken/Förderprogramme. Kapitalbedarf: Investitionsplan. Rentabilitätsvorschau: Kosten-/Erlösplanung für 3 Jahre. Liquiditätsplan: monatliche Cashflow-Vorschau. Förderung: KfW-Startgeld, BAFA-Gründungsberatung, Gründungszuschuss (Agentur für Arbeit).",
+  },
 ];
 
 export function getQuestionsByCategory(category: string): QuizQuestion[] {
